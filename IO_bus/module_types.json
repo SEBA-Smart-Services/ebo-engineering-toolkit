@@ -1,0 +1,71 @@
+[{
+	"name": "UI-8/AO-4",
+	"sbo_name": "io.UI8AO4",
+	"DI_count": 0,
+	"UI_count": 8,
+	"DO_count": 0,
+	"AO_count": 4
+}, {
+	"name": "DI-16",
+	"sbo_name": "io.DI16",
+	"DI_count": 16,
+	"UI_count": 0,
+	"DO_count": 0,
+	"AO_count": 0
+}, {
+	"name": "UI-16",
+	"sbo_name": "io.UI16",
+	"DI_count": 0,
+	"UI_count": 16,
+	"DO_count": 0,
+	"AO_count": 0
+}, {
+	"name": "DO-FA-12",
+	"sbo_name": "io.DOFA12",
+	"DI_count": 0,
+	"UI_count": 0,
+	"DO_count": 12,
+	"AO_count": 0
+}, {
+	"name": "AO-8",
+	"sbo_name": "io.AO8",
+	"DI_count": 0,
+	"UI_count": 0,
+	"DO_count": 0,
+	"AO_count": 8
+}, {
+	"name": "AO-V-8",
+	"sbo_name": "io.AOV8",
+	"DI_count": 0,
+	"UI_count": 0,
+	"DO_count": 0,
+	"AO_count": 8
+}, {
+	"name": "UI-8/AO-V-4",
+	"sbo_name": "io.UI8AOV4",
+	"DI_count": 0,
+	"UI_count": 8,
+	"DO_count": 0,
+	"AO_count": 4
+}, {
+	"name": "UI-8/DO-FC-4",
+	"sbo_name": "io.UI8DOFC4",
+	"DI_count": 0,
+	"UI_count": 8,
+	"DO_count": 4,
+	"AO_count": 0
+}, {
+	"name": "RTD-DI-16",
+	"sbo_name": "io.RTDDI16",
+	"DI_count": 16,
+	"UI_count": 0,
+	"DO_count": 0,
+	"AO_count": 0
+}, {
+	"name": "DO-FC-8",
+	"sbo_name": "io.DOFC8",
+	"DI_count": 0,
+	"UI_count": 0,
+	"DO_count": 8,
+	"AO_count": 0
+}]

@@ -1,0 +1,5800 @@
+' Date : 10/26/16 10:16:12 AM
+' User : Root\sebb
+' Version :  2.0.0.20140808
+
+Continuum
+Network
+
+Path : SkilledPark\Bcx2
+
+Dictionary : 
+
+'TYPE                   : NAME                   : TEMPLATE : PORT  : SERIALNUM    : INFINETID  : MODEL      : ALIAS
+ InfinityInfinetCtlr    : CHW1                   : False    : comm2 : 2069619      : 2          : b3814      : CHW1
+EndDictionary
+
+Dictionary : CHW1
+
+ 'TYPE                   : DEVICE                       : NAME                   : TEMPLATE : ALIAS
+  Report                 : SkilledPark\Bcx2\CHW1        : CH1                    : False    : CH1
+  Report                 : SkilledPark\Bcx2\CHW1        : CH1LWT                 : False    : CH1LWT
+  Report                 : SkilledPark\Bcx2\CHW1        : CH2                    : False    : CH2
+  Report                 : SkilledPark\Bcx2\CHW1        : CH2LWT                 : False    : CH2LWT
+  Report                 : SkilledPark\Bcx2\CHW1        : CH3                    : False    : CH3
+  Report                 : SkilledPark\Bcx2\CHW1        : CH3LWT                 : False    : CH3LWT
+  Report                 : SkilledPark\Bcx2\CHW1        : ComLWT                 : False    : ComLWT
+  Report                 : SkilledPark\Bcx2\CHW1        : ComRWT                 : False    : ComRWT
+  EventEnrollment        : SkilledPark\Bcx2\CHW1        : CH1Alarm               : False    : CH1Alarm
+  EventEnrollment        : SkilledPark\Bcx2\CHW1        : CH1PumpAlarm           : False    : CH1PumpAlarm
+  EventEnrollment        : SkilledPark\Bcx2\CHW1        : CH2Alarm               : False    : CH2Alarm
+  EventEnrollment        : SkilledPark\Bcx2\CHW1        : CH2PumpAlarm           : False    : CH2PumpAlarm
+  EventEnrollment        : SkilledPark\Bcx2\CHW1        : CH3Alarm               : False    : CH3Alarm
+  EventEnrollment        : SkilledPark\Bcx2\CHW1        : CH3PumpAlarm           : False    : CH3PumpAlarm
+  EventNotification      : SkilledPark\Bcx2\CHW1        : Cos_P2                 : False    : Cos_P2
+  Schedule               : SkilledPark\Bcx2\CHW1        : LeadLagSched           : False    : LeadLagSched
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : BValve1MinPos          : False    : BValve1MinPos
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1ActivekWr           : False    : CH1ActivekWr
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1AlmValue            : False    : CH1AlmValue
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1Available           : False    : CH1Available
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1DpError             : False    : CH1DpError
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1FailReset           : False    : CH1FailReset
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1FaultLatch          : False    : CH1FaultLatch
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1HardFault           : False    : CH1HardFault
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1HoursRun            : False    : CH1HoursRun
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1OutOfService        : False    : CH1OutOfService
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1PercentRla          : False    : CH1PercentRla
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1PumpAI2             : False    : CH1PumpAI2
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1PumpFault           : False    : CH1PumpFault
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1PumpFltLatch        : False    : CH1PumpFltLatch
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1PumpSpeed           : False    : CH1PumpSpeed
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1PumpStatus          : False    : CH1PumpStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1RecycleStatus       : False    : CH1RecycleStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1RecycleTimer        : False    : CH1RecycleTimer
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1SetEnable           : False    : CH1SetEnable
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1VesselDP            : False    : CH1VesselDP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH1VesselDP_SP         : False    : CH1VesselDP_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2ActivekWr           : False    : CH2ActivekWr
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2AlmValue            : False    : CH2AlmValue
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2Available           : False    : CH2Available
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2DpError             : False    : CH2DpError
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2FailReset           : False    : CH2FailReset
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2FaultLatch          : False    : CH2FaultLatch
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2HardFault           : False    : CH2HardFault
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2HoursRun            : False    : CH2HoursRun
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2OutOfService        : False    : CH2OutOfService
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2PercentRla          : False    : CH2PercentRla
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2PumpAI2             : False    : CH2PumpAI2
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2PumpFault           : False    : CH2PumpFault
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2PumpFltLatch        : False    : CH2PumpFltLatch
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2PumpSpeed           : False    : CH2PumpSpeed
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2PumpStatus          : False    : CH2PumpStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2RecycleStatus       : False    : CH2RecycleStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2RecycleTimer        : False    : CH2RecycleTimer
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2SetEnable           : False    : CH2SetEnable
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2VesselDP            : False    : CH2VesselDP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH2VesselDP_SP         : False    : CH2VesselDP_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3ActivekWr           : False    : CH3ActivekWr
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3AlmValue            : False    : CH3AlmValue
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3Available           : False    : CH3Available
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3DpError             : False    : CH3DpError
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3FailReset           : False    : CH3FailReset
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3FaultLatch          : False    : CH3FaultLatch
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3FlowStatus          : False    : CH3FlowStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3HardFault           : False    : CH3HardFault
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3HoursRun            : False    : CH3HoursRun
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3OutOfService        : False    : CH3OutOfService
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3PercentRla          : False    : CH3PercentRla
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3PumpAI2             : False    : CH3PumpAI2
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3PumpFault           : False    : CH3PumpFault
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3PumpFltLatch        : False    : CH3PumpFltLatch
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3PumpSpeed           : False    : CH3PumpSpeed
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3PumpStatus          : False    : CH3PumpStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3RecycleStatus       : False    : CH3RecycleStatus
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3RecycleTimer        : False    : CH3RecycleTimer
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3SetEnable           : False    : CH3SetEnable
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3VesselDP            : False    : CH3VesselDP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CH3VesselDP_SP         : False    : CH3VesselDP_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : ChrSequence            : False    : ChrSequence
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : ChwFieldDp_In          : False    : ChwFieldDp_In
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : ChwSysDp_SP            : False    : ChwSysDp_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : CurrentStep            : False    : CurrentStep
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : DpError_SP             : False    : DpError_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : EconomyMode            : False    : EconomyMode
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : Enthalpy               : False    : Enthalpy
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : EnthalpySP             : False    : EnthalpySP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : LeadLagManual          : False    : LeadLagManual
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : LeadLagTS              : False    : LeadLagTS
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : MasterCCall            : False    : MasterCCall
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : MasterTimSt_In         : False    : MasterTimSt_In
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : MaxDPError             : False    : MaxDPError
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : OSAirHum_SP           : False    : OSAirHum_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : OSAirTemp_SP           : False    : OSAirTemp_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : RecycleTime_SP         : False    : RecycleTime_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : RetTempMax             : False    : RetTempMax
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : SettleTimeLeft         : False    : SettleTimeLeft
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : SettleTimer_SP         : False    : SettleTimer_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageDownNow           : False    : StageDownNow
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageDownPerc_SP       : False    : StageDownPerc_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageDownTemp_SP       : False    : StageDownTemp_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageDownTimLeft       : False    : StageDownTimLeft
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageDwnDelay_SP       : False    : StageDwnDelay_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageUpDelay_SP        : False    : StageUpDelay_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageUpNow             : False    : StageUpNow
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageUpPerc_SP         : False    : StageUpPerc_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageUpTemp_SP         : False    : StageUpTemp_SP
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : StageUpTimLeft         : False    : StageUpTimLeft
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : TotalActiveKWr         : False    : TotalActiveKWr
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : TotalPercentRla        : False    : TotalPercentRla
+  InfinityNumeric        : SkilledPark\Bcx2\CHW1        : ValveAB_Output         : False    : ValveAB_Output
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : CH1LvgTemp             : False    : CH1LvgTemp
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : CH1Status              : False    : CH1Status
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : CH2LvgTemp             : False    : CH2LvgTemp
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : CH2Status              : False    : CH2Status
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : CH3LvgTemp             : False    : CH3LvgTemp
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : CH3Status              : False    : CH3Status
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : ComLvgTemp             : False    : ComLvgTemp
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : ComRetTemp             : False    : ComRetTemp
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : OSAirHumidity          : False    : OSAirHumidity
+  InfinityInput          : SkilledPark\Bcx2\CHW1        : OSAirTemp              : False    : OSAirTemp
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : BypassValve1           : False    : BypassValve1
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : BypassValve2           : False    : BypassValve2
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : CH1Enable              : False    : CH1Enable
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : CH1PumpEnable          : False    : CH1PumpEnable
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : CH2Enable              : False    : CH2Enable
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : CH2PumpEnable          : False    : CH2PumpEnable
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : CH3Enable              : False    : CH3Enable
+  InfinityOutput         : SkilledPark\Bcx2\CHW1        : CH3PumpEnable          : False    : CH3PumpEnable
+  InfinityString         : SkilledPark\Bcx2\CHW1        : CH1String              : False    : CH1String
+  InfinityString         : SkilledPark\Bcx2\CHW1        : CH2String              : False    : CH2String
+  InfinityString         : SkilledPark\Bcx2\CHW1        : CH3String              : False    : CH3String
+  InfinityString         : SkilledPark\Bcx2\CHW1        : CHLeadLag              : False    : CHLeadLag
+  InfinityString         : SkilledPark\Bcx2\CHW1        : CHRLoadingString       : False    : CHRLoadingString
+  InfinityString         : SkilledPark\Bcx2\CHW1        : CHRStagingString       : False    : CHRStagingString
+  Group                  : SkilledPark\Bcx2\CHW1        : FiringOrder            : False    : FiringOrder
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_MasterCCall        : False    : Set_MasterCCall
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH2FltLatch        : False    : Set_CH2FltLatch
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH3PmpFLatch       : False    : Set_CH3PmpFLatch
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH1FltLatch        : False    : Set_CH1FltLatch
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : LoadingControls        : False    : LoadingControls
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH2PmpFLatch       : False    : Set_CH2PmpFLatch
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH1PmpFLatch       : False    : Set_CH1PmpFLatch
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : ChillerStaging         : False    : ChillerStaging
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Ctl_CH2                : False    : Ctl_CH2
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Ctl_CH1                : False    : Ctl_CH1
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : CoolCall               : False    : CoolCall
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : RunHours               : False    : RunHours
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Ctl_CH3                : False    : Ctl_CH3
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH3FltLatch        : False    : Set_CH3FltLatch
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_LeadLag            : False    : Set_LeadLag
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH1RecycTime       : False    : Set_CH1RecycTime
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH2RecycTime       : False    : Set_CH2RecycTime
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_CH3RecycTime       : False    : Set_CH3RecycTime
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Ctl_Bypass             : False    : Ctl_Bypass
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Set_EconomyMode        : False    : Set_EconomyMode
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Globals_P1             : False    : Globals_P1
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Globals_P2             : False    : Globals_P2
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Calcs                  : False    : Calcs
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Reset_ManLeadLag       : False    : Reset_ManLeadLag
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Reset_CH1FltRst        : False    : Reset_CH1FltRst
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Reset_CH2FltRst        : False    : Reset_CH2FltRst
+  InfinityProgram        : SkilledPark\Bcx2\CHW1        : Reset_CH3FltRst        : False    : Reset_CH3FltRst
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCFlashWRCount        : False    : ACCFlashWRCount
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLastBackup          : False    : ACCLastBackup
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDAnswerStr        : False    : ACCLCDAnswerStr
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDBacklight        : False    : ACCLCDBacklight
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDDispLine1        : False    : ACCLCDDispLine1
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDDispLine2        : False    : ACCLCDDispLine2
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDDispLine3        : False    : ACCLCDDispLine3
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDDispLine4        : False    : ACCLCDDispLine4
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDDispMode         : False    : ACCLCDDispMode
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDKeyStroke        : False    : ACCLCDKeyStroke
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDTimeFormat       : False    : ACCLCDTimeFormat
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDUserPresnt       : False    : ACCLCDUserPresnt
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCLCDViewPasswd       : False    : ACCLCDViewPasswd
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCRestartMode         : False    : ACCRestartMode
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCStatusBackup        : False    : ACCStatusBackup
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : ACCStatusFlash         : False    : ACCStatusFlash
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Alarms                 : False    : Alarms
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Date                   : False    : Date
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Dayofmonth             : False    : Dayofmonth
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Dayofyear              : False    : Dayofyear
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Errors                 : False    : Errors
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Freemem                : False    : Freemem
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Hour                   : False    : Hour
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Hourofday              : False    : Hourofday
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : LCDPassword            : False    : LCDPassword
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Minute                 : False    : Minute
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Month                  : False    : Month
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : PowerFail              : False    : PowerFail
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : PowerUpTime            : False    : PowerUpTime
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Scan                   : False    : Scan
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Second                 : False    : Second
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Timeofday              : False    : Timeofday
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Version                : False    : Version
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Weekday                : False    : Weekday
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW1        : Year                   : False    : Year
+EndDictionary
+
+Object : CHW1
+ Type : InfinityInfinetCtlr
+ LastChange : 29/03/2016 8:40:55 AM
+ DeviceId : SkilledPark\Bcx2
+ Alias : CHW1
+ CreateTime : 3/09/2007 11:10:52 AM
+ CreatedBy : Root\venue
+ TimeLocked : 1/04/2016 8:09:50 AM
+ InstanceId : 7002/7046
+ CntrlType : b3814
+ InfinetId : 2
+ Location : MSSB 3W6
+ NetworkId : 11
+ Port : comm2
+ SerialNum : 2069619
+ VersionNum : 4.500064
+ BACnetDeviceId : 2069619
+EndObject
+
+InfinetCtlr : CHW1
+ Object : CH1
+  Type : Report
+  LastChange : 19/02/2016 11:15:56 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1
+  CreateTime : 10/01/2008 10:08:33 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 19/02/2016 11:15:56 AM
+  InstanceId : 7046/7006
+  Description : Chiller 1 & Primary Pump
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Text
+  ChartSubType : Root\AccTextHtml
+  Is Report LogFilter : True
+  ReportFilter : Root\LastWeek
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\CH1ENABLE
+   ..\CH1STATUS
+   ..\CH1PUMPENABLE
+   ..\CH1PUMPSTATUS
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH1LWT
+  Type : Report
+  LastChange : 19/02/2016 11:10:14 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1LWT
+  CreateTime : 10/01/2008 10:01:33 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 19/02/2016 11:10:14 AM
+  InstanceId : 7046/7003
+  Description : Chiller 1 Leaving Water Temp
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Trend
+  ChartSubType : Root\AccTrend
+  Is Report LogFilter : True
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\CH1LVGTEMP
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,LoggedAttributeId,LoggedAttributeIndex,DataType,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH2
+  Type : Report
+  LastChange : 18/01/2008 10:44:14 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2
+  CreateTime : 10/01/2008 10:14:13 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 18/01/2008 10:44:14 AM
+  InstanceId : 7046/7007
+  Description : Chiller 2 & Primary Pump
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Text
+  ChartSubType : Root\AccTextHtml
+  Is Report LogFilter : True
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\CH2ENABLE
+   ..\CH2STATUS
+   ..\CH2PUMPENABLE
+   ..\CH2PUMPSTATUS
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH2LWT
+  Type : Report
+  LastChange : 10/01/2008 10:04:03 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2LWT
+  CreateTime : 10/01/2008 10:02:58 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 10/01/2008 10:04:03 AM
+  InstanceId : 7046/7004
+  Description : Chiller 2 Leaving Water Temp
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Trend
+  ChartSubType : Root\AccTrend
+  Is Report LogFilter : True
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\CH2LVGTEMP
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,LoggedAttributeId,LoggedAttributeIndex,DataType,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH3
+  Type : Report
+  LastChange : 18/01/2008 10:44:55 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3
+  CreateTime : 10/01/2008 10:15:49 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 18/01/2008 10:44:55 AM
+  InstanceId : 7046/7008
+  Description : Chiller 3 & Primary Pump
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Text
+  ChartSubType : Root\AccTextHtml
+  Is Report LogFilter : True
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\CH3ENABLE
+   ..\CH3STATUS
+   ..\CH3PUMPENABLE
+   ..\CH3PUMPSTATUS
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH3LWT
+  Type : Report
+  LastChange : 10/01/2008 10:04:45 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3LWT
+  CreateTime : 10/01/2008 10:04:06 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 10/01/2008 10:04:45 AM
+  InstanceId : 7046/7005
+  Description : Chiller 3 Leaving Water Temp
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Trend
+  ChartSubType : Root\AccTrend
+  Is Report LogFilter : True
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\CH3LVGTEMP
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,LoggedAttributeId,LoggedAttributeIndex,DataType,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ComLWT
+  Type : Report
+  LastChange : 10/01/2008 9:53:47 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ComLWT
+  CreateTime : 10/01/2008 9:52:39 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 10/01/2008 9:53:56 AM
+  InstanceId : 7046/7002
+  Description : Common CHW Leaving Temp
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Trend
+  ChartSubType : Root\AccTrend
+  Is Report LogFilter : True
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 8/01/2008 7:00:35 PM
+  ReportEndDate : 9/01/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\COMLVGTEMP
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,LoggedAttributeId,LoggedAttributeIndex,DataType,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ComRWT
+  Type : Report
+  LastChange : 18/04/2008 8:34:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ComRWT
+  CreateTime : 9/01/2008 7:54:42 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 18/04/2008 8:34:44 PM
+  InstanceId : 7046/7001
+  DataSource : ExtendedLog
+  ReportType : Object-value
+  ChartType : Trend
+  ChartSubType : Root\AccTrend
+  ReportFilter : Root\WeekToNow
+  ReportStartDate : 18/04/2008 2:00:35 PM
+  ReportEndDate : 20/04/2008 7:00:37 AM
+  FirstMemberList : 
+  {
+   ..\COMRETTEMP
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : %r
+  ReportSubheading : Report created at %t
+  ReportXCaption : Time
+  ReportYCaption : Value
+  ReportFootnote : %p
+  ColumnList : DateTime,PointName,PointValue,LoggedAttributeId,LoggedAttributeIndex,DataType,StatusFlags
+  PathId : SkilledPark\Bcx2\CHW1
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH1Alarm
+  Type : EventEnrollment
+  LastChange : 8/01/2009 1:23:50 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1Alarm
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 8/01/2009 1:23:50 PM
+  InstanceId : 7046/15
+  EventType : ChangeOfState
+  EventParameters : 
+  {
+   Type : 289
+   Value : 
+   {
+    timeDelay : 10
+    listOfValues : 
+    {
+     {
+      choice : 1
+      value : 1
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ObjPropRef : 
+  {
+   objectIdentifier : ..\CH1FAULTLATCH
+   propertyIdentifier : 85
+   propertyArrayIndex : 0
+   deviceIdentifier : 
+  }
+  EndOfCDT
+  EventEnable : ToOffnormal,ToNormal
+  EventNotificationId : SkilledPark\Bcx2\CHW1\Cos_P2
+  Recipient : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  MsgTextNormal : Chiller 1 Return To Normal
+  MsgTextOffNormal : Chiller 1 Failed
+ EndObject
+
+ Object : CH1PumpAlarm
+  Type : EventEnrollment
+  LastChange : 29/03/2016 7:02:59 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpAlarm
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 29/03/2016 8:53:12 AM
+  InstanceId : 7046/12
+  EventType : ChangeOfState
+  EventParameters : 
+  {
+   Type : 289
+   Value : 
+   {
+    timeDelay : 10
+    listOfValues : 
+    {
+     {
+      choice : 1
+      value : 1
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ObjPropRef : 
+  {
+   objectIdentifier : ..\CH1PUMPFLTLATCH
+   propertyIdentifier : 85
+   propertyArrayIndex : 0
+   deviceIdentifier : 
+  }
+  EndOfCDT
+  EventEnable : ToOffnormal,ToNormal
+  EventNotificationId : SkilledPark\Bcx2\CHW1\Cos_P2
+  Recipient : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  MsgTextNormal : Chilled Water Pump 1 Return To Normal
+  MsgTextOffNormal : Chilled Water Pump 1 Failed
+ EndObject
+
+ Object : CH2Alarm
+  Type : EventEnrollment
+  LastChange : 8/01/2009 1:23:56 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2Alarm
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 8/01/2009 1:23:56 PM
+  InstanceId : 7046/14
+  EventType : ChangeOfState
+  EventParameters : 
+  {
+   Type : 289
+   Value : 
+   {
+    timeDelay : 10
+    listOfValues : 
+    {
+     {
+      choice : 1
+      value : 1
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ObjPropRef : 
+  {
+   objectIdentifier : ..\CH2FAULTLATCH
+   propertyIdentifier : 85
+   propertyArrayIndex : 0
+   deviceIdentifier : 
+  }
+  EndOfCDT
+  EventEnable : ToOffnormal,ToNormal
+  EventNotificationId : SkilledPark\Bcx2\CHW1\Cos_P2
+  Recipient : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  MsgTextNormal : Chiller 2 Return To Normal
+  MsgTextOffNormal : Chiller 2 Failed
+ EndObject
+
+ Object : CH2PumpAlarm
+  Type : EventEnrollment
+  LastChange : 29/03/2016 6:54:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpAlarm
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 29/03/2016 8:26:09 AM
+  InstanceId : 7046/11
+  EventType : ChangeOfState
+  EventParameters : 
+  {
+   Type : 289
+   Value : 
+   {
+    timeDelay : 10
+    listOfValues : 
+    {
+     {
+      choice : 1
+      value : 1
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ObjPropRef : 
+  {
+   objectIdentifier : ..\CH2PUMPFLTLATCH
+   propertyIdentifier : 85
+   propertyArrayIndex : 0
+   deviceIdentifier : 
+  }
+  EndOfCDT
+  EventEnable : ToOffnormal,ToNormal
+  EventNotificationId : SkilledPark\Bcx2\CHW1\Cos_P2
+  Recipient : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  MsgTextNormal : Chilled Water Pump 2 Return To Normal
+  MsgTextOffNormal : Chilled Water Pump 2 Failed
+ EndObject
+
+ Object : CH3Alarm
+  Type : EventEnrollment
+  LastChange : 8/01/2009 1:24:00 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3Alarm
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 8/01/2009 1:24:00 PM
+  InstanceId : 7046/13
+  EventType : ChangeOfState
+  EventParameters : 
+  {
+   Type : 289
+   Value : 
+   {
+    timeDelay : 10
+    listOfValues : 
+    {
+     {
+      choice : 1
+      value : 1
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ObjPropRef : 
+  {
+   objectIdentifier : ..\CH3FAULTLATCH
+   propertyIdentifier : 85
+   propertyArrayIndex : 0
+   deviceIdentifier : 
+  }
+  EndOfCDT
+  EventEnable : ToOffnormal,ToNormal
+  EventNotificationId : SkilledPark\Bcx2\CHW1\Cos_P2
+  Recipient : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  MsgTextNormal : Chiller 3 Return To Normal
+  MsgTextOffNormal : Chiller 3 Failed
+ EndObject
+
+ Object : CH3PumpAlarm
+  Type : EventEnrollment
+  LastChange : 8/01/2009 1:24:02 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpAlarm
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 8/01/2009 1:24:02 PM
+  InstanceId : 7046/10
+  EventType : ChangeOfState
+  EventParameters : 
+  {
+   Type : 289
+   Value : 
+   {
+    timeDelay : 10
+    listOfValues : 
+    {
+     {
+      choice : 1
+      value : 1
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ObjPropRef : 
+  {
+   objectIdentifier : ..\CH3PUMPFLTLATCH
+   propertyIdentifier : 85
+   propertyArrayIndex : 0
+   deviceIdentifier : 
+  }
+  EndOfCDT
+  EventEnable : ToOffnormal,ToNormal
+  EventNotificationId : SkilledPark\Bcx2\CHW1\Cos_P2
+  Recipient : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  MsgTextNormal : Chilled Water Pump 3 Return To Normal
+  MsgTextOffNormal : Chilled Water Pump 3 Failed
+ EndObject
+
+ Object : Cos_P2
+  Type : EventNotification
+  LastChange : 8/01/2009 1:24:05 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Cos_P2
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 8/01/2009 1:24:05 PM
+  InstanceId : 7046/110
+  Description : Change of State Fault
+  EventNotificationId : 110
+  NCLSPriority : 
+  {
+   2
+   0
+   2
+  }
+  EndOfCDT
+  AckRequired : ToOffnormal,ToNormal
+  RecipientList : 
+  {
+   {
+    validDays : Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    fromTime : 12:00:00 AM
+    toTime : 11:59:59.99 PM
+    recipient : 
+    {
+     Type : 18
+     Value : WORKSTATION1
+    }
+    processIdentifier : 0
+    issueConfirmedNotifications : False
+    transitions : ToOffnormal,ToFault,ToNormal
+   }
+   {
+    validDays : Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    fromTime : 12:00:00 AM
+    toTime : 11:59:59.99 PM
+    recipient : 
+    {
+     Type : 18
+     Value : WORKSTATION2
+    }
+    processIdentifier : 0
+    issueConfirmedNotifications : False
+    transitions : ToOffnormal,ToFault,ToNormal
+   }
+  }
+  EndOfCDT
+  DeactivateCriteria : AckAndRTN
+  AlarmOptions : BeepOnToOffNormal,DisplayPanel,BlinkOnAlarm
+  BackgroundColor : 255
+  EMailRecipients : 
+  {
+  }
+  EndOfCDT
+  PagingRecipients : 
+  {
+  }
+  EndOfCDT
+  AlarmFont : F5FFFFFF0000000000000000000000009001000000000000000000004D53205368656C6C20446C670018405F88004D5F0000000034F3F403F4F2F40300000000
+  ToRTNFont : F5FFFFFF0000000000000000000000009001000000000000000000004D53205368656C6C20446C6700FFFFFF9CE14800C4F2F403000000000000000000000000
+  ToRTNBGColor : 65280
+  ToFaultFont : F5FFFFFF0000000000000000000000009001000000000000000000004D53205368656C6C20446C670000000000000000FFFFFFFF581C4D5F581C4D5F00000000
+  ToFaultBGColor : 65535
+  LocalRecipientList : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : LeadLagSched
+  Type : Schedule
+  LastChange : 29/03/2016 9:26:00 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : LeadLagSched
+  CreateTime : 9/01/2008 2:15:16 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 29/03/2016 9:26:00 AM
+  InstanceId : 7046/148
+  Value : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  EffectivePeriod : 
+  {
+   startdate : 9/01/2008
+   enddate : 9/01/2009
+  }
+  EndOfCDT
+  WeeklySchedule : 
+  {
+   {
+    TimeValueList : 
+    {
+     {
+      time : 1:00:00 AM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 1:00:01 AM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+    }
+   }
+   {
+    TimeValueList : 
+    {
+    }
+   }
+   {
+    TimeValueList : 
+    {
+    }
+   }
+   {
+    TimeValueList : 
+    {
+    }
+   }
+   {
+    TimeValueList : 
+    {
+    }
+   }
+   {
+    TimeValueList : 
+    {
+    }
+   }
+  }
+  EndOfCDT
+  ExceptionSched : 
+  {
+  }
+  EndOfCDT
+  PropertyRef : 
+  {
+   {
+    objectIdentifier : LEADLAGTS
+    propertyIdentifier : 85
+    propertyArrayIndex : 0
+    deviceIdentifier : 
+   }
+  }
+  EndOfCDT
+  Priority : 16
+  OccupancyTime : 1/01/1989
+  UnoccupancyTime : 1/01/1989
+  CalenderRefList : 
+  {
+  }
+  EndOfCDT
+  WeeklySchNotes : 
+  {
+
+
+
+
+
+
+
+  }
+  EndOfCDT
+  ExcSchedNotes : 
+  {
+  }
+  EndOfCDT
+  ActiveValue : 
+  {
+   Type : 2
+   Value : 1
+  }
+  EndOfCDT
+  InactiveValue : 
+  {
+   Type : 2
+   Value : 0
+  }
+  EndOfCDT
+  PackagedDays : 
+  {
+   {
+    PackagedDaysName : 
+    PackagedDaysId : 0
+    BackColor : 0
+    ForeColor : 0
+    MaxTimeInterval : 0
+    EventList : 
+    {
+    }
+    Priority : 0
+   }
+   {
+    PackagedDaysName : Monday
+    PackagedDaysId : 1
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 1:00:00 AM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 1:00:01 AM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Tuesday
+    PackagedDaysId : 2
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Wednesday
+    PackagedDaysId : 3
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Thursday
+    PackagedDaysId : 4
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Friday
+    PackagedDaysId : 5
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Saturday
+    PackagedDaysId : 6
+    BackColor : 4289382620
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Sunday
+    PackagedDaysId : 7
+    BackColor : 4289382620
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Holiday
+    PackagedDaysId : 8
+    BackColor : 4294901760
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+  }
+  EndOfCDT
+  AutosendTime : 1 12:00:00 AM
+  SpecialEventName : 
+  {
+  }
+  EndOfCDT
+  ScheduleDefault : 
+  {
+   Type : 19
+   Value : 0
+  }
+  EndOfCDT
+  DefaultDataType : 3
+  ApplyMidnightValue : True
+  DefaultMidnightValue : 
+  {
+   time : 12:00:00 AM
+   value : 
+   {
+    Type : 19
+    Value : 0
+   }
+  }
+  EndOfCDT
+ EndObject
+
+ Object : BValve1MinPos
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:39 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : BValve1MinPos
+  CreateTime : 15/02/2008 1:19:15 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 15/09/2016 9:07:12 AM
+  InstanceId : 7046/156
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :  50
+ EndObject
+
+ Object : CH1ActivekWr
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:39 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1ActivekWr
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:39 PM
+  InstanceId : 7046/19
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilowatts
+  Value :  493
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1AlmValue
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:40 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1AlmValue
+  CreateTime : 29/10/2007 11:22:30 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:40 PM
+  InstanceId : 7046/126
+  Description : 0=nml, 1=part flt, 2=full shdwn
+  Export : True
+  Format : #
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 2
+ EndObject
+
+ Object : CH1Available
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:40 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1Available
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:40 PM
+  InstanceId : 7046/56
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH1DpError
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:40 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1DpError
+  CreateTime : 30/10/2007 10:51:46 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:40 PM
+  InstanceId : 7046/139
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value :  1.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1FailReset
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:40 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1FailReset
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/08/2016 1:46:42 PM
+  InstanceId : 7046/54
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH1FaultLatch
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:40 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1FaultLatch
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  AlarmInfo : True
+  TimeLocked : 21/04/2016 3:16:40 PM
+  InstanceId : 7046/82
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 24
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1HardFault
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1HardFault
+  CreateTime : 29/10/2007 1:26:25 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/08/2016 1:46:13 PM
+  InstanceId : 7046/129
+  Description : Hard Fault from HLI
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH1HoursRun
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1HoursRun
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:41 PM
+  InstanceId : 7046/60
+  Format : ####
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : hours
+  Value :    0
+ EndObject
+
+ Object : CH1OutOfService
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1OutOfService
+  CreateTime : 2/11/2007 9:34:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:41 PM
+  InstanceId : 7046/144
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH1PercentRla
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PercentRla
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:41 PM
+  InstanceId : 7046/85
+  Export : True
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :   50
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1PumpAI2
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpAI2
+  CreateTime : 29/10/2007 9:45:21 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:41 PM
+  InstanceId : 7046/123
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   0.000
+ EndObject
+
+ Object : CH1PumpFault
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpFault
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:41 PM
+  InstanceId : 7046/68
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH1PumpFltLatch
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:41 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpFltLatch
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  AlarmInfo : True
+  TimeLocked : 21/04/2016 3:16:41 PM
+  InstanceId : 7046/55
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH1PumpSpeed
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:42 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpSpeed
+  CreateTime : 29/10/2007 9:21:48 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:42 PM
+  InstanceId : 7046/122
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :   0
+ EndObject
+
+ Object : CH1PumpStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:42 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpStatus
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:42 PM
+  InstanceId : 7046/67
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1RecycleStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:42 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1RecycleStatus
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:42 PM
+  InstanceId : 7046/53
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH1RecycleTimer
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:42 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1RecycleTimer
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:42 PM
+  InstanceId : 7046/51
+  Export : True
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  0
+ EndObject
+
+ Object : CH1SetEnable
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:42 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1SetEnable
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:42 PM
+  InstanceId : 7046/75
+  Export : True
+  Format : $###
+  LogIntervalSecs : 600
+  Size : 36
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1VesselDP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:43 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1VesselDP
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:43 PM
+  InstanceId : 7046/79
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 18.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1VesselDP_SP
+  Type : InfinityNumeric
+  LastChange : 15/09/2016 10:17:29 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1VesselDP_SP
+  CreateTime : 30/10/2007 10:46:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:17:29 AM
+  InstanceId : 7046/134
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 18.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2ActivekWr
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:43 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2ActivekWr
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:43 PM
+  InstanceId : 7046/18
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilowatts
+  Value :  493
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2AlmValue
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:43 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2AlmValue
+  CreateTime : 29/10/2007 11:27:17 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:43 PM
+  InstanceId : 7046/127
+  Description : 0=nml, 1=part flt, 2=full shdwn
+  Export : True
+  Format : #
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH2Available
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:43 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2Available
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:43 PM
+  InstanceId : 7046/50
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH2DpError
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:43 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2DpError
+  CreateTime : 30/10/2007 10:52:49 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:43 PM
+  InstanceId : 7046/140
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : -10.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2FailReset
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2FailReset
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/08/2016 1:46:52 PM
+  InstanceId : 7046/48
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH2FaultLatch
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2FaultLatch
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  AlarmInfo : True
+  TimeLocked : 21/04/2016 3:16:44 PM
+  InstanceId : 7046/81
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH2HardFault
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2HardFault
+  CreateTime : 29/10/2007 1:26:32 PM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:44 PM
+  InstanceId : 7046/130
+  Description : Hard Fault from HLI
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH2HoursRun
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2HoursRun
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:44 PM
+  InstanceId : 7046/59
+  Format : ####
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : hours
+  Value :    0
+ EndObject
+
+ Object : CH2OutOfService
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2OutOfService
+  CreateTime : 2/11/2007 9:34:26 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:44 PM
+  InstanceId : 7046/143
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH2PercentRla
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:44 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PercentRla
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:44 PM
+  InstanceId : 7046/84
+  Export : True
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :   60
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2PumpAI2
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:45 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpAI2
+  CreateTime : 29/10/2007 9:49:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:17:10 AM
+  InstanceId : 7046/124
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   0.000
+ EndObject
+
+ Object : CH2PumpFault
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:45 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpFault
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:45 PM
+  InstanceId : 7046/66
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH2PumpFltLatch
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:45 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpFltLatch
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  AlarmInfo : True
+  TimeLocked : 21/04/2016 3:16:45 PM
+  InstanceId : 7046/49
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 24
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2PumpSpeed
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:45 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpSpeed
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:16:52 AM
+  InstanceId : 7046/65
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :   0
+ EndObject
+
+ Object : CH2PumpStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:45 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpStatus
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:45 PM
+  InstanceId : 7046/64
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH2RecycleStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:45 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2RecycleStatus
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:45 PM
+  InstanceId : 7046/47
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH2RecycleTimer
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:46 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2RecycleTimer
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:46 PM
+  InstanceId : 7046/43
+  Export : True
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  1
+ EndObject
+
+ Object : CH2SetEnable
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:46 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2SetEnable
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:46 PM
+  InstanceId : 7046/74
+  Export : True
+  Format : $###
+  LogIntervalSecs : 600
+  Size : 36
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2VesselDP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:46 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2VesselDP
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:46 PM
+  InstanceId : 7046/78
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 10.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2VesselDP_SP
+  Type : InfinityNumeric
+  LastChange : 15/09/2016 10:17:40 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2VesselDP_SP
+  CreateTime : 30/10/2007 10:47:29 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:17:40 AM
+  InstanceId : 7046/135
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 18.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3ActivekWr
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:46 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3ActivekWr
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:46 PM
+  InstanceId : 7046/17
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilowatts
+  Value :  249
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3AlmValue
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:46 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3AlmValue
+  CreateTime : 29/10/2007 11:27:23 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:46 PM
+  InstanceId : 7046/128
+  Description : 0=nml, 1=part flt, 2=full shdwn
+  Export : True
+  Format : #
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : CH3Available
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3Available
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:47 PM
+  InstanceId : 7046/42
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH3DpError
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3DpError
+  CreateTime : 30/10/2007 10:52:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:47 PM
+  InstanceId : 7046/141
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 18.5
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3FailReset
+  Type : InfinityNumeric
+  LastChange : 15/08/2016 3:15:18 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3FailReset
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/08/2016 3:15:18 PM
+  InstanceId : 7046/40
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH3FaultLatch
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3FaultLatch
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  AlarmInfo : True
+  TimeLocked : 21/04/2016 3:16:47 PM
+  InstanceId : 7046/80
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH3FlowStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3FlowStatus
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:47 PM
+  InstanceId : 7046/100
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH3HardFault
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3HardFault
+  CreateTime : 29/10/2007 1:26:35 PM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:47 PM
+  InstanceId : 7046/131
+  Description : Hard Fault from HLI
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH3HoursRun
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3HoursRun
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:47 PM
+  InstanceId : 7046/58
+  Format : ####
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : hours
+  Value :    0
+ EndObject
+
+ Object : CH3OutOfService
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3OutOfService
+  CreateTime : 2/11/2007 9:35:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:48 PM
+  InstanceId : 7046/145
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH3PercentRla
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PercentRla
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:48 PM
+  InstanceId : 7046/83
+  Export : True
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :   50
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3PumpAI2
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpAI2
+  CreateTime : 29/10/2007 9:49:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:48 PM
+  InstanceId : 7046/125
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   0.000
+ EndObject
+
+ Object : CH3PumpFault
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpFault
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:48 PM
+  InstanceId : 7046/63
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : CH3PumpFltLatch
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpFltLatch
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  AlarmInfo : True
+  TimeLocked : 21/04/2016 3:16:48 PM
+  InstanceId : 7046/41
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 24
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3PumpSpeed
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpSpeed
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:48 PM
+  InstanceId : 7046/62
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :  50
+ EndObject
+
+ Object : CH3PumpStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:49 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpStatus
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 12/08/2016 12:49:42 PM
+  InstanceId : 7046/61
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH3RecycleStatus
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:49 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3RecycleStatus
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:49 PM
+  InstanceId : 7046/39
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : CH3RecycleTimer
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:49 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3RecycleTimer
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:49 PM
+  InstanceId : 7046/36
+  Export : True
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  1
+ EndObject
+
+ Object : CH3SetEnable
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:49 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3SetEnable
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:49 PM
+  InstanceId : 7046/73
+  Export : True
+  Format : $###
+  LogIntervalSecs : 600
+  Size : 36
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3VesselDP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:49 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3VesselDP
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:49 PM
+  InstanceId : 7046/77
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 13.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3VesselDP_SP
+  Type : InfinityNumeric
+  LastChange : 15/09/2016 10:17:59 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3VesselDP_SP
+  CreateTime : 30/10/2007 10:47:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:17:59 AM
+  InstanceId : 7046/136
+  Description : 20.3
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 18.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : ChrSequence
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:50 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ChrSequence
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:50 PM
+  InstanceId : 7046/35
+  Description : Changed on loss of cooling call
+  Format : ###
+  LogIntervalSecs : 3600
+  Size : 168
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 321
+  ExtLogEnable : True
+ EndObject
+
+ Object : ChwFieldDp_In
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:50 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ChwFieldDp_In
+  CreateTime : 29/10/2007 8:47:11 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:07:35 AM
+  InstanceId : 7046/120
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 140
+ EndObject
+
+ Object : ChwSysDp_SP
+  Type : InfinityNumeric
+  LastChange : 15/09/2016 10:18:17 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ChwSysDp_SP
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:39:47 AM
+  InstanceId : 7046/57
+  Format : ###
+  LogIntervalSecs : 3600
+  Size : 24
+  LogType : LogInstantaneous
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : 200
+  ExtLogEnable : True
+ EndObject
+
+ Object : CurrentStep
+  Type : InfinityNumeric
+  LastChange : 15/09/2016 10:22:28 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CurrentStep
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:22:28 AM
+  InstanceId : 7046/72
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   1
+ EndObject
+
+ Object : DpError_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:50 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : DpError_SP
+  CreateTime : 30/10/2007 10:50:29 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:50 PM
+  InstanceId : 7046/138
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value :  0.5
+  ExtLogEnable : True
+ EndObject
+
+ Object : EconomyMode
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:50 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : EconomyMode
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:50 PM
+  InstanceId : 7046/118
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : Enthalpy
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:50 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Enthalpy
+  CreateTime : 7/01/2008 4:15:25 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 21/04/2016 3:16:50 PM
+  InstanceId : 7046/147
+  Export : True
+  Format : ###.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kjoules/kg
+  Value :  13.0
+ EndObject
+
+ Object : EnthalpySP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : EnthalpySP
+  CreateTime : 7/01/2008 4:11:53 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 26/05/2016 9:28:16 AM
+  InstanceId : 7046/146
+  Format : ##.#
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kjoules/kg
+  Value : 42.0
+ EndObject
+
+ Object : LeadLagManual
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : LeadLagManual
+  CreateTime : 9/01/2008 2:16:39 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 21/04/2016 3:16:51 PM
+  InstanceId : 7046/150
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : LeadLagTS
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : LeadLagTS
+  CreateTime : 9/01/2008 2:15:58 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 21/04/2016 3:16:51 PM
+  InstanceId : 7046/149
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : MasterCCall
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : MasterCCall
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:21:44 AM
+  InstanceId : 7046/69
+  Export : True
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : MasterTimSt_In
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : MasterTimSt_In
+  CreateTime : 29/10/2007 3:35:23 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:22:12 AM
+  InstanceId : 7046/132
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : MaxDPError
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : MaxDPError
+  CreateTime : 30/10/2007 10:48:30 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:51 PM
+  InstanceId : 7046/137
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilopascal
+  Value : -3.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : OS AirHum_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : OSAirHum_SP
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/116
+  Format : ###
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : %RH
+  Value :  55
+ EndObject
+
+ Object : OSAirTemp_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : OSAirTemp_SP
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/117
+  Format : ##.#
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 21.0
+ EndObject
+
+ Object : RecycleTime_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : RecycleTime_SP
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/33
+  Export : True
+  Format : ##
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value : 15
+ EndObject
+
+ Object : RetTempMax
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : RetTempMax
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/20
+  Format : ###.#
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :  13.0
+ EndObject
+
+ Object : SettleTimeLeft
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : SettleTimeLeft
+  CreateTime : 29/10/2007 8:21:51 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/2
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  1
+ EndObject
+
+ Object : SettleTimer_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : SettleTimer_SP
+  CreateTime : 29/10/2007 8:21:51 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/1
+  Format : ##
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value : 30
+ EndObject
+
+ Object : StageDownNow
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:52 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageDownNow
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:52 PM
+  InstanceId : 7046/29
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : StageDownPerc_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:53 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageDownPerc_SP
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:53 PM
+  InstanceId : 7046/16
+  Format : ###
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :  50
+ EndObject
+
+ Object : StageDownTemp_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:53 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageDownTemp_SP
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:53 PM
+  InstanceId : 7046/102
+  Format : ##.#
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 10.0
+ EndObject
+
+ Object : StageDownTimLeft
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:53 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageDownTimLeft
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:53 PM
+  InstanceId : 7046/98
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  1
+ EndObject
+
+ Object : StageDwnDelay_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:53 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageDwnDelay_SP
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:53 PM
+  InstanceId : 7046/34
+  Description : Stage Down Delay Time 15 -2 mins
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  0
+ EndObject
+
+ Object : StageUpDelay_SP
+  Type : InfinityNumeric
+  LastChange : 16/05/2016 4:03:51 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageUpDelay_SP
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 16/05/2016 4:04:07 PM
+  InstanceId : 7046/30
+  Description : Stage up delay 20 - 5 minutes
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :   1
+ EndObject
+
+ Object : StageUpNow
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:53 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageUpNow
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 16/05/2016 4:04:17 PM
+  InstanceId : 7046/28
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ElecType : Digital
+ EndObject
+
+ Object : StageUpPerc_SP
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:54 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageUpPerc_SP
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:54 PM
+  InstanceId : 7046/103
+  Format : ###
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :  50
+ EndObject
+
+ Object : StageUpTemp_SP
+  Type : InfinityNumeric
+  LastChange : 16/05/2016 4:06:48 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageUpTemp_SP
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 16/05/2016 4:06:48 PM
+  InstanceId : 7046/70
+  Format : ##.#
+  Port : 
+  Setpoint : True
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 13.5
+ EndObject
+
+ Object : StageUpTimLeft
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:54 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : StageUpTimLeft
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:54 PM
+  InstanceId : 7046/99
+  Format : ##
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : minutes
+  Value :  0
+ EndObject
+
+ Object : TotalActiveKWr
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:54 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : TotalActiveKWr
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:54 PM
+  InstanceId : 7046/107
+  Format : ####
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : kilowatts
+  Value :  249
+  ExtLogEnable : True
+ EndObject
+
+ Object : TotalPercentRla
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:54 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : TotalPercentRla
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:54 PM
+  InstanceId : 7046/86
+  Description : Total Percent Running Load Amps
+  Format : ###
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :  94
+  ExtLogEnable : True
+ EndObject
+
+ Object : ValveAB_Output
+  Type : InfinityNumeric
+  LastChange : 21/04/2016 3:16:54 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ValveAB_Output
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:07:52 AM
+  InstanceId : 7046/108
+  Format : ###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value : 100
+ EndObject
+
+ Object : CH1LvgTemp
+  Type : InfinityInput
+  LastChange : 26/05/2016 8:57:08 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1LvgTemp
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:57:08 AM
+  InstanceId : 7046/89
+  Channel : 4
+  Description : Chiller leaving temperature
+  ElecType : ACCTemp(DEGC)
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Threshold : 0.2
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 18.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1Status
+  Type : InfinityInput
+  LastChange : 21/04/2016 3:16:36 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1Status
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 20/10/2016 8:59:45 AM
+  InstanceId : 7046/93
+  Channel : 2
+  Description : Chiller Status
+  DigitalFilter : False
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2LvgTemp
+  Type : InfinityInput
+  LastChange : 26/05/2016 8:57:02 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2LvgTemp
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:57:02 AM
+  InstanceId : 7046/90
+  Channel : 7
+  Description : Chiller leaving temperature
+  ElecType : ACCTemp(DEGC)
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Threshold : 0.2
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value :  0.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2Status
+  Type : InfinityInput
+  LastChange : 21/04/2016 3:16:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2Status
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:24:39 AM
+  InstanceId : 7046/94
+  Channel : 5
+  Description : Chiller Status
+  DigitalFilter : False
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3LvgTemp
+  Type : InfinityInput
+  LastChange : 26/05/2016 8:56:55 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3LvgTemp
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:56:55 AM
+  InstanceId : 7046/91
+  Channel : 3
+  Description : Chiller leaving temperature
+  ElecType : ACCTemp(DEGC)
+  Export : True
+  Format : ###.##
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Threshold : 0.2
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value :   8.00
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3Status
+  Type : InfinityInput
+  LastChange : 21/04/2016 3:16:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3Status
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 12/08/2016 12:49:55 PM
+  InstanceId : 7046/95
+  Channel : 8
+  Description : Chiller Status
+  DigitalFilter : False
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ExtLogEnable : True
+ EndObject
+
+ Object : ComLvgTemp
+  Type : InfinityInput
+  LastChange : 26/05/2016 8:57:22 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ComLvgTemp
+  CreateTime : 29/10/2007 8:21:57 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:57:22 AM
+  InstanceId : 7046/52
+  Channel : 12
+  Description : Common leaving chw temperature
+  ElecType : ACCTemp(DEGC)
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Threshold : 0.2
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 66.8
+  ExtLogEnable : True
+ EndObject
+
+ Object : ComRetTemp
+  Type : InfinityInput
+  LastChange : 26/05/2016 8:57:17 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ComRetTemp
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:57:17 AM
+  InstanceId : 7046/87
+  Channel : 13
+  Description : Common return chw temperature
+  ElecType : ACCTemp(DEGC)
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Threshold : 0.2
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 18.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : OSAirHumidity
+  Type : InfinityInput
+  LastChange : 21/04/2016 3:16:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : OSAirHumidity
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:24:41 AM
+  InstanceId : 7046/92
+  Channel : 10
+  Description : Outside Air Humidity
+  ElecScaleTop : 5
+  EngScaleTop : 100
+  Export : True
+  Format : ###
+  LogIntervalSecs : 3600
+  Size : 24
+  LogType : LogAverage
+  Port : 
+  Threshold : 1
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : %RH
+  Value :  55
+  ExtLogEnable : True
+ EndObject
+
+ Object : OSAirTemp
+  Type : InfinityInput
+  LastChange : 26/05/2016 8:57:13 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : OSAirTemp
+  CreateTime : 29/10/2007 8:22:00 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 1:38:31 PM
+  InstanceId : 7046/88
+  Channel : 11
+  Description : Outside Air Temperature
+  ElecType : ACCTemp(DEGC)
+  Export : True
+  Format : ##.#
+  LogIntervalSecs : 900
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Threshold : 0.2
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : degrees-C
+  Value : 20.0
+  ExtLogEnable : True
+ EndObject
+
+ Object : BypassValve1
+  Type : InfinityOutput
+  LastChange : 15/09/2016 10:52:37 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : BypassValve1
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:52:37 AM
+  InstanceId : 7046/5
+  Channel : 5
+  ElecScaleTop : 10
+  EngScaleTop : 100
+  Export : True
+  Format : ###
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :  50
+  ExtLogEnable : True
+ EndObject
+
+ Object : BypassValve2
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:38 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : BypassValve2
+  CreateTime : 29/10/2007 8:21:51 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:52:24 AM
+  InstanceId : 7046/4
+  Channel : 6
+  ElecScaleTop : 10
+  EngScaleTop : 100
+  Export : True
+  Format : ###
+  LogIntervalSecs : 300
+  Size : 96
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : percent
+  Value :   0
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1Enable
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:38 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1Enable
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 2:25:14 PM
+  InstanceId : 7046/46
+  Channel : 1
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1PumpEnable
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:38 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1PumpEnable
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:38 PM
+  InstanceId : 7046/96
+  Channel : 9
+  Description : Chilled water pump enable
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+ EndObject
+
+ Object : CH2Enable
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:38 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2Enable
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:38 PM
+  InstanceId : 7046/45
+  Channel : 2
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH2PumpEnable
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:38 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2PumpEnable
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:38 PM
+  InstanceId : 7046/97
+  Channel : 10
+  Description : Chilled water pump enable
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3Enable
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:39 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3Enable
+  CreateTime : 29/10/2007 8:21:56 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:39 PM
+  InstanceId : 7046/44
+  Channel : 3
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH3PumpEnable
+  Type : InfinityOutput
+  LastChange : 21/04/2016 3:16:39 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3PumpEnable
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:39 PM
+  InstanceId : 7046/6
+  Channel : 11
+  Description : Chilled water pump enable
+  ElecType : Digital
+  Export : True
+  Format : $###
+  LogIntervalSecs : 300
+  Size : 48
+  LogType : LogInstantaneous
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : On
+  ExtLogEnable : True
+ EndObject
+
+ Object : CH1String
+  Type : InfinityString
+  LastChange : 21/04/2016 3:16:55 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH1String
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:55 PM
+  InstanceId : 7046/111
+  Port : 
+  StringSize : 32
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Start Pump
+ EndObject
+
+ Object : CH2String
+  Type : InfinityString
+  LastChange : 21/04/2016 3:16:55 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH2String
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:55 PM
+  InstanceId : 7046/112
+  Port : 
+  StringSize : 32
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Start Chiller
+ EndObject
+
+ Object : CH3String
+  Type : InfinityString
+  LastChange : 21/04/2016 3:16:55 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CH3String
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:55 PM
+  InstanceId : 7046/113
+  Port : 
+  StringSize : 32
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Wait To Start
+ EndObject
+
+ Object : CHLeadLag
+  Type : InfinityString
+  LastChange : 21/04/2016 3:16:55 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CHLeadLag
+  CreateTime : 9/01/2008 2:25:04 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 26/05/2016 10:43:25 AM
+  InstanceId : 7046/151
+  Port : 
+  StringSize : 32
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Sequence321
+ EndObject
+
+ Object : CHRLoadingString
+  Type : InfinityString
+  LastChange : 21/04/2016 3:16:55 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CHRLoadingString
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:55 PM
+  InstanceId : 7046/115
+  Port : 
+  StringSize : 32
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Checking Load
+ EndObject
+
+ Object : CHRStagingString
+  Type : InfinityString
+  LastChange : 21/04/2016 3:16:55 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CHRStagingString
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 10:43:56 AM
+  InstanceId : 7046/114
+  Port : 
+  StringSize : 32
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Stage 4 On
+ EndObject
+
+ Object : FiringOrder
+  Type : Group
+  LastChange : 10/01/2008 11:55:27 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : FiringOrder
+  CreateTime : 3/09/2007 11:10:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 10/01/2008 11:55:27 AM
+  InstanceId : 7046/1
+  ListOfGroupMembers : 
+  {
+   {
+    objectIdentifier : ..\RESET_CH3FLTRST
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\RESET_CH2FLTRST
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\RESET_CH1FLTRST
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\RESET_MANLEADLAG
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\CALCS
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\GLOBALS_P2
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\GLOBALS_P1
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_ECONOMYMODE
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\CTL_BYPASS
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH3RECYCTIME
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH2RECYCTIME
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH1RECYCTIME
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_LEADLAG
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH3FLTLATCH
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\CTL_CH3
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\RUNHOURS
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\COOLCALL
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\CTL_CH1
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\CTL_CH2
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\CHILLERSTAGING
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH1PMPFLATCH
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH2PMPFLATCH
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\LOADINGCONTROLS
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH1FLTLATCH
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH3PMPFLATCH
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_CH2FLTLATCH
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_MASTERCCALL
+    listOfPropertyReferences : 
+    {
+    }
+   }
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Set_MasterCCall
+  Type : InfinityProgram
+  LastChange : 22/04/2016 2:10:39 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_MasterCCall
+  CreateTime : 29/10/2007 8:21:51 AM
+  CreatedBy : Root\venue
+  TimeLocked : 22/04/2016 2:10:39 PM
+  InstanceId : 7046/3
+  ByteCode : 
+Line LoopForEver
+  If TS > 60 then Goto ImportPoints
+
+Line ImportPoints
+  MasterCCall = SkilledPark\Bcx1\CCall_Bcx1 or SkilledPark\Bcx2\CCall_Bcx2
+  Goto LoopForEver
+
+Line E
+  If TS > 15 then Goto LoopForEver
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH2FltLatch
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:59 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH2FltLatch
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 2:23:44 PM
+  InstanceId : 7046/7
+  ByteCode : 
+Line FaultNormal
+  CH2FaultLatch = Off
+  If CH2HardFault is On then Goto FaultActive
+  If CH2OutOfService is On then Goto OutOfService
+
+Line FaultActive
+  CH2FaultLatch = On
+  If MasterCCall is Off or CH2FailReset is On then
+    CH2FaultLatch = Off
+    Goto FaultNormal
+  Endif
+
+Line OutOfService
+  CH2FaultLatch = On
+  If CH2OutOfService is Off then
+    CH2FaultLatch = Off
+    Goto FaultNormal
+  Endif
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH3PmpFLatch
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:17:00 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH3PmpFLatch
+  CreateTime : 29/10/2007 8:21:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:35:28 AM
+  InstanceId : 7046/8
+  ByteCode : 
+Line PowerFailure
+  CH3FlowStatus = Off
+  If PowerFail = Off then Goto PumpOff
+
+Line PumpOff
+  CH3FlowStatus = Off
+  CH3PumpFltLatch = Off
+  If PowerFail = On then Goto PowerFailure
+  If (CH3PumpEnable = On) then Goto WaitForStatus
+
+Line WaitForStatus
+  CH3FlowStatus = Off
+  CH3PumpFltLatch = Off
+  If PowerFail = On then Goto PowerFailure
+  If (TS > 120) and ((CH3PumpStatus = Off) or (CH3VesselDP < 3)) then Goto AlamActive
+  If (CH3PumpStatus = On) and (CH3VesselDP > 3) then Goto PumpOn
+  If (CH3PumpEnable = Off) then Goto PumpOff
+
+Line PumpOn
+  CH3FlowStatus = On
+  CH3PumpFltLatch = Off
+  If PowerFail = On then
+    CH3PumpFltLatch = Off
+    Goto PowerFailure
+  Endif
+  If (CH3PumpEnable = Off) then Goto PumpOff
+  If (CH3PumpStatus = Off) then Goto WaitForStatus
+
+Line AlamActive
+  CH3FlowStatus = Off
+  CH3PumpFltLatch = On
+  If PowerFail = On then
+    CH3PumpFltLatch = Off
+    Goto PowerFailure
+  Endif
+  If CH3FailReset = On or MasterCCall = Off then Goto PumpOff
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH1FltLatch
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:58 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH1FltLatch
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:03:22 AM
+  InstanceId : 7046/21
+  ByteCode : 
+Line FaultNormal
+  CH1FaultLatch = Off
+  If CH1HardFault is On then Goto FaultActive
+  If CH1OutOfService is On then Goto OutOfService
+
+Line FaultActive
+  CH1FaultLatch = On
+  If MasterCCall is Off or CH1FailReset is On then
+    CH1FaultLatch = Off
+    Goto FaultNormal
+  Endif
+
+Line OutOfService
+  CH1FaultLatch = On
+  If CH1OutOfService is Off then
+    CH1FaultLatch = Off
+    Goto FaultNormal
+  Endif
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : LoadingControls
+  Type : InfinityProgram
+  LastChange : 22/04/2016 2:10:31 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : LoadingControls
+  CreateTime : 29/10/2007 8:21:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 8:53:02 AM
+  InstanceId : 7046/23
+  ByteCode : 
+'  This program will set the stage up and stage down flags for the
+'  chiller plant when the chillers are called to start, and the 
+'  chilled water return temperature has been above or below setpoint
+'  for the required staging time. 
+Line Powerfailure
+  Turn Off StageUpNow and StageDownNow
+  CHRLoadingString = "Power Failure"
+  If PowerFail = Off then Goto NoCooling
+
+Line NoCooling
+  If PowerFail = On then Goto Powerfailure
+  CHRLoadingString = "No Cooling"
+  StageDownTimLeft = StageDwnDelay_SP
+  StageUpTimLeft = StageUpDelay_SP
+  If MasterCCall is On then Goto CheckLoad
+  Turn Off StageUpNow and StageDownNow
+
+Line CheckLoad
+  If PowerFail = On then Goto Powerfailure
+  If MasterCCall is Off then Goto NoCooling
+  CHRLoadingString = "Checking Load"
+  StageDownTimLeft = StageDwnDelay_SP
+  StageUpTimLeft = StageUpDelay_SP
+  If ComRetTemp >= StageUpTemp_SP then Goto HighLoad 'and TotalPercentRla >= StageUpPerc_SP 
+  If ComRetTemp <= StageDownTemp_SP then Goto LowLoad 'and TotalPercentRla <= StageDownPerc_SP 
+  Turn Off StageUpNow and StageDownNow
+
+Line HighLoad
+  If PowerFail = On then Goto Powerfailure
+  If MasterCCall is Off then Goto NoCooling
+  CHRLoadingString = "High Load"
+  If ComRetTemp < StageUpTemp_SP then Goto CheckLoad ' or TotalPercentRla < StageUpPerc_SP 
+  StageUpTimLeft = max((StageUpDelay_SP - TM), 0)
+  If StageUpTimLeft <= 0 and SettleTimeLeft <= 0 then
+    Turn On StageUpNow
+    Goto ChangeStage
+  Endif
+
+Line LowLoad
+  If PowerFail = On then Goto Powerfailure
+  If MasterCCall is Off then Goto NoCooling
+  CHRLoadingString = "Low Load"
+  If (ComRetTemp > StageDownTemp_SP) then Goto CheckLoad '(TotalPercentRla > StageDownPerc_SP) or 
+  StageDownTimLeft = max((StageDwnDelay_SP - TM), 0)
+  If StageDownTimLeft <= 0 and SettleTimeLeft <= 0 then
+    Turn On StageDownNow
+    Goto ChangeStage
+  Endif
+
+Line ChangeStage
+  If PowerFail = On then Goto Powerfailure
+  If MasterCCall is Off then Goto NoCooling
+  CHRLoadingString = "Change Stage"
+  If StageUpNow is Off and StageDownNow is Off then Goto CheckLoad
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH2PmpFLatch
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:59 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH2PmpFLatch
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:35:50 AM
+  InstanceId : 7046/25
+  ByteCode : 
+Line PowerFailure
+  CH2PumpFltLatch = Off
+  If PowerFail = Off then Goto PumpOff
+
+Line PumpOff
+  CH2PumpFltLatch = Off
+  If PowerFail = On then Goto PowerFailure
+  If (CH2PumpEnable = On) then Goto WaitForStatus
+
+Line WaitForStatus
+  CH2PumpFltLatch = Off
+  If PowerFail = On then Goto PowerFailure
+  If (TS > 120) and ((CH2PumpStatus = Off) or (CH2VesselDP < 10)) then Goto AlamActive
+  If (CH2PumpStatus = On) and (CH2VesselDP > 12) then Goto PumpOn
+  If (CH2PumpEnable = Off) then Goto PumpOff
+
+Line PumpOn
+  CH2PumpFltLatch = Off
+  If PowerFail = On then
+    CH2PumpFltLatch = Off
+    Goto PowerFailure
+  Endif
+  If (CH2PumpEnable = Off) then Goto PumpOff
+  If ((CH2PumpStatus = Off) or (CH2VesselDP < 12)) then Goto WaitForStatus
+
+Line AlamActive
+  CH2PumpFltLatch = On
+  If PowerFail = On then
+    CH2PumpFltLatch = Off
+    Goto PowerFailure
+  Endif
+  If CH2FailReset = On or MasterCCall = Off then Goto PumpOff
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH1PmpFLatch
+  Type : InfinityProgram
+  LastChange : 15/09/2016 2:17:12 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH1PmpFLatch
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 2:17:12 PM
+  InstanceId : 7046/26
+  ByteCode : 
+Line PowerFailure
+  CH1PumpFltLatch = Off
+  If PowerFail = Off then Goto PumpOff
+
+Line PumpOff
+  CH1PumpFltLatch = Off
+  If PowerFail = On then Goto PowerFailure
+  If (CH1PumpEnable = On) then Goto WaitForStatus
+
+Line WaitForStatus
+  CH1PumpFltLatch = Off
+  If PowerFail = On then Goto PowerFailure
+  If (TS > 120) and ((CH1PumpStatus = Off) or (CH1VesselDP < 8)) then Goto AlamActive
+  If (CH1PumpStatus = On) and (CH1VesselDP > 12) then Goto PumpOn
+  If (CH1PumpEnable = Off) then Goto PumpOff
+
+Line PumpOn
+  CH1PumpFltLatch = Off
+  If PowerFail = On then
+    CH1PumpFltLatch = Off
+    Goto PowerFailure
+  Endif
+  If (CH1PumpEnable = Off) then Goto PumpOff
+  If ((CH1PumpStatus = Off) or (CH1VesselDP < 12)) then Goto WaitForStatus
+
+Line AlamActive
+  CH1PumpFltLatch = On
+  If PowerFail = On then
+    CH1PumpFltLatch = Off
+    Goto PowerFailure
+  Endif
+  If CH1FailReset = On or MasterCCall = Off then Goto PumpOff
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : ChillerStaging
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:56 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ChillerStaging
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:04:08 AM
+  InstanceId : 7046/27
+  ByteCode : 
+'  This program will stage the three chillers through 4 stages of loading
+'  depending on the return chilled water temperature and the call for 
+'  cooling. The stages are as follows;
+
+'           Stage 0  No chillers.
+'           Stage 1  Chiller 3 only.
+'           Stage 2  Chillers 1 or Chiller 2 only.
+'           Stage 3  Chillers 1 and 2.
+'           Stage 4  Chillers 1, 2, and 3.
+
+'  If any chiller fails it will be shut down and removed from any further
+'  staging until its fail has been cleared.
+
+'  This program only sends a chiller enable signal - the actual Chiller
+'  startup sequence is handled locally by the dedicated chiller controller.
+
+Line ProgStart
+  Turn Off CH1SetEnable, CH2SetEnable and CH3SetEnable
+  CHRStagingString = "Program Start"
+  If TS > 30 then Goto NoCooling
+
+Line AllChrsFailed
+  CurrentStep = 0
+  Turn Off CH1SetEnable, CH2SetEnable and CH3SetEnable
+  Turn Off StageUpNow and StageDownNow
+  CHRStagingString = "All Chillers Failed"
+  If CH1Available is On or CH2Available is On or CH3Available is On then Goto NoCooling
+  If MasterCCall is Off then Goto NoCooling
+
+Line NoCooling
+  CurrentStep = 0
+  Turn Off CH1SetEnable, CH2SetEnable and CH3SetEnable
+  Turn Off StageUpNow and StageDownNow
+  CHRStagingString = "No Cooling"
+  If MasterCCall is On then Goto Stage1Request
+
+Line Stage1Request
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 1 Request"
+  If CH1Available is Off and CH2Available is Off and CH3Available is Off then Goto AllChrsFailed
+  If CH3Available is Off then
+    Turn Off CH3SetEnable
+    Goto Stage2Request
+  Else
+    Turn On CH3SetEnable
+    Turn Off StageUpNow and StageDownNow
+    Goto Stage1_On
+  Endif
+
+Line Stage1_On
+  Turn On CH3SetEnable
+  CHRStagingString = "Stage 1 On"
+  If MasterCCall is Off then Goto NoCooling
+  If CH3Available is Off then
+    Goto Stage2Request
+  Endif
+  CurrentStep = 1
+  If StageUpNow is On then Goto Stage2Request
+  Turn Off StageDownNow
+  Turn Off CH1SetEnable and CH2SetEnable
+
+Line Stage2Request
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 2 Request"
+  If CH1Available is Off and CH2Available is Off and CH3Available is Off then Goto AllChrsFailed
+  If ChrSequence = 312 then
+    If CH1Available is Off then
+      If CH2Available is Off then
+        Turn Off CH1SetEnable and CH2SetEnable
+        Goto Stage1Request
+      Else
+        Turn On CH2SetEnable
+        Turn Off StageUpNow, StageDownNow and CH3SetEnable
+        Goto Stage2_On
+      Endif
+    Else
+      Turn On CH1SetEnable
+      Turn Off StageUpNow, StageDownNow, CH2SetEnable and CH3SetEnable
+      Goto Stage2_On
+    Endif
+  Else
+    If CH2Available is Off then
+      If CH1Available is Off then
+        Turn Off CH1SetEnable and CH2SetEnable
+        Goto Stage1Request
+      Else
+        Turn On CH1SetEnable
+        Turn Off StageUpNow, StageDownNow and CH3SetEnable
+        Goto Stage2_On
+      Endif
+    Else
+      Turn On CH2SetEnable
+      Turn Off StageUpNow, StageDownNow, CH1SetEnable and CH3SetEnable
+      Goto Stage2_On
+    Endif
+  Endif
+
+Line Stage2_On
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 2 On"
+  If CH1Available is Off and CH1SetEnable is On then Goto Stage2Request
+  If CH2Available is Off and CH2SetEnable is On then Goto Stage2Request
+  CurrentStep = 2
+
+  Turn Off CH3SetEnable
+  If StageUpNow is On then Goto Stage3Request
+  If StageDownNow is On then Goto Stage1Request
+
+Line Stage3Request
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 3 Request"
+  If CH1Available is Off and CH2Available is Off and CH3Available is Off then Goto AllChrsFailed
+  If CH1Available is Off or CH2Available is Off then
+    Goto Stage4Request
+  Else
+    Turn On CH1SetEnable and CH2SetEnable
+    Turn Off StageUpNow and StageDownNow
+    Goto Stage3_On
+  Endif
+
+Line Stage3_On
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 3 On"
+  If CH1Available is Off and CH1SetEnable is On then Goto Stage4Request
+  If CH2Available is Off and CH2SetEnable is On then Goto Stage4Request
+  CurrentStep = 3
+
+  Turn Off CH3SetEnable
+  If StageUpNow is On then Goto Stage4Request
+  If StageDownNow is On then Goto Stage2Request
+
+Line Stage4Request
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 4 Request"
+  Turn Off StageUpNow and StageDownNow
+  Goto Stage4_On
+
+Line Stage4_On
+  If MasterCCall is Off then Goto NoCooling
+  CHRStagingString = "Stage 4 On"
+  If CH1Available is On then
+    Turn On CH1SetEnable
+  Else
+    Turn Off CH1SetEnable
+  Endif
+  If CH2Available is On then
+    Turn On CH2SetEnable
+  Else
+    Turn Off CH2SetEnable
+  Endif
+  If CH3Available is On then
+    Turn On CH3SetEnable
+  Else
+    Turn Off CH3SetEnable
+  Endif
+  CurrentStep = 4
+
+  If StageDownNow is On and CH1Available is On and CH2Available is On then Goto Stage3Request
+  If StageDownNow is On and (CH1Available <> CH2Available) then Goto Stage2Request
+  If StageDownNow is On and CH1Available is Off and CH2Available is Off then Goto Stage1Request
+  If CH1Available is Off and CH2Available is Off and CH3Available is Off then Goto AllChrsFailed
+  Turn Off StageUpNow
+
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Ctl_CH2
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:57 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Ctl_CH2
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:34:49 AM
+  InstanceId : 7046/31
+  ByteCode : 
+Numeric PumpRunOnDelay
+
+PumpRunOnDelay = 60 'secs 
+
+Goto WaitToStart
+
+Line Powerfailure
+  CH2Enable = Off
+  CH2PumpEnable = Off
+  CH2String = "Power Failure"
+  If PowerFail = Off then Goto WaitToStart
+
+Line WaitToStart
+  If PowerFail = On then Goto Powerfailure
+  CH2Enable = Off
+  CH2PumpEnable = Off
+  CH2String = "Wait To Start"
+  If CH2SetEnable = On then Goto OpenBypass
+
+Line OpenBypass
+  ValveAB_Output = 100
+  CH2String = "Open Bypass"
+  If TS > 60 then Goto StartPump
+
+Line StartPump
+  If PowerFail = On then Goto Powerfailure
+  CH2Enable = Off
+  CH2PumpEnable = On
+  CH2String = "Start Pump"
+  If CH2SetEnable = Off then Goto StopChiller
+  If CH2PumpStatus = On then Goto StartChiller
+
+Line StartChiller
+  If PowerFail = On then Goto Powerfailure
+  CH2String = "Start Chiller"
+  If TS > 60 then
+    CH2Enable = On
+    CH2PumpEnable = On
+  Endif
+  If CH2SetEnable = Off then Goto StopChiller
+  If CH2LvgTemp < 4 then Goto StopChiller 'Stops chiller from tripping
+
+Line StopChiller
+  If PowerFail = On then Goto Powerfailure
+  CH2String = "Stop Chiller"
+  CH2Enable = Off
+  CH2PumpEnable = On
+  Goto PumpRunOn
+
+Line PumpRunOn
+  If PowerFail = On then Goto Powerfailure
+  ValveAB_Output = 100
+  CH2String = "Pump Run On"
+  CH2Enable = Off
+  CH2PumpEnable = On
+  If TS >= PumpRunOnDelay then
+    CH2Enable = Off
+    CH2PumpEnable = Off
+    Goto RecycleTiming
+  Endif
+
+Line RecycleTiming
+  If PowerFail = On then Goto Powerfailure
+  CH2String = "Recycle Timing"
+  If CH2RecycleTimer = 0 then Goto WaitToStart
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Ctl_CH1
+  Type : InfinityProgram
+  LastChange : 22/04/2016 2:10:08 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Ctl_CH1
+  CreateTime : 29/10/2007 8:21:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 17/08/2016 2:58:30 PM
+  InstanceId : 7046/32
+  ByteCode : 
+Numeric PumpRunOnDelay
+
+PumpRunOnDelay = 60 'secs 
+
+Goto WaitToStart
+
+Line Powerfailure
+  CH1Enable = Off
+  CH1PumpEnable = Off
+  CH1String = "Power Failure"
+  If PowerFail = Off then Goto WaitToStart
+
+Line WaitToStart
+  If PowerFail = On then Goto Powerfailure
+  CH1Enable = Off
+  CH1PumpEnable = Off
+  CH1String = "Wait To Start"
+  If CH1SetEnable = On then Goto OpenBypass
+
+Line OpenBypass
+  ValveAB_Output = 100
+  CH1String = "Open Bypass"
+  If TS > 60 then Goto StartPump
+
+Line StartPump
+  If PowerFail = On then Goto Powerfailure
+  CH1Enable = Off
+  CH1PumpEnable = On
+  CH1String = "Start Pump"
+  If CH1SetEnable = Off then Goto StopChiller
+  If CH1PumpStatus = On then Goto StartChiller
+
+Line StartChiller
+  If PowerFail = On then Goto Powerfailure
+  CH1String = "Start Chiller"
+  If TS > 60 then
+    CH1Enable = On
+    CH1PumpEnable = On
+  Endif
+  If CH1SetEnable = Off then Goto StopChiller
+  If CH1LvgTemp < 4 then Goto StopChiller 'Stops chiller from tripping
+
+Line StopChiller
+  If PowerFail = On then Goto Powerfailure
+  CH1String = "Stop Chiller"
+  CH1Enable = Off
+  CH1PumpEnable = On
+  Goto PumpRunOn
+
+Line PumpRunOn
+  If PowerFail = On then Goto Powerfailure
+  ValveAB_Output = 100
+  CH1String = "Pump Run On"
+  CH1Enable = Off
+  CH1PumpEnable = On
+  If TS >= PumpRunOnDelay then
+    CH1Enable = Off
+    CH1PumpEnable = Off
+    Goto RecycleTiming
+  Endif
+
+Line RecycleTiming
+  If PowerFail = On then Goto Powerfailure
+  CH1String = "Recycle Timing"
+  If CH1RecycleTimer = 0 then Goto WaitToStart
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : CoolCall
+  Type : InfinityProgram
+  LastChange : 22/04/2016 2:10:00 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : CoolCall
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 17/08/2016 2:57:39 PM
+  InstanceId : 7046/37
+  ByteCode : 
+Line LoopForEver
+  If TS > 15 then Goto ImportPoints1
+
+Line ImportPoints1
+  If SkilledPark\Bcx1\CCall_Bcx1 is On or SkilledPark\Bcx2\CCall_Bcx2 is On then
+    MasterCCall = On
+  Else
+    MasterCCall = Off
+  Endif
+  Goto LoopForEver
+
+Line E
+  If TS > 15 then Goto LoopForEver
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : RunHours
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:58 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : RunHours
+  CreateTime : 29/10/2007 8:21:55 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:03:15 AM
+  InstanceId : 7046/38
+  ByteCode : 
+'Enter hours run here
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Ctl_CH3
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:57 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Ctl_CH3
+  CreateTime : 29/10/2007 8:21:58 AM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 2:36:00 PM
+  InstanceId : 7046/71
+  ByteCode : 
+Numeric PumpRunOnDelay
+
+PumpRunOnDelay = 60 'secs 
+
+Goto WaitToStart
+
+Line Powerfailure
+  CH3Enable = Off
+  CH3PumpEnable = Off
+  CH3String = "Power Failure"
+  If PowerFail = Off then Goto WaitToStart
+
+Line WaitToStart
+  If PowerFail = On then Goto Powerfailure
+  CH3Enable = Off
+  CH3PumpEnable = Off
+  CH3String = "Wait To Start"
+  If CH3SetEnable = On then Goto OpenBypass
+
+Line OpenBypass
+  ValveAB_Output = 100
+  CH3String = "Open Bypass"
+  If TS > 60 then Goto StartPump
+
+Line StartPump
+  If PowerFail = On then Goto Powerfailure
+  CH3Enable = Off
+  CH3PumpEnable = On
+  CH3String = "Start Pump"
+  If CH3SetEnable = Off then Goto StopChiller
+  If CH3PumpStatus = On then Goto StartChiller
+
+Line StartChiller
+  If PowerFail = On then Goto Powerfailure
+  CH3String = "Start Chiller"
+  If TS > 60 then
+    CH3Enable = On
+    CH3PumpEnable = On
+  Endif
+  If CH3SetEnable = Off then Goto StopChiller
+  If CH3LvgTemp < 3.5 then Goto StopChiller 'Stops chiller from tripping
+
+Line StopChiller
+  If PowerFail = On then Goto Powerfailure
+  CH3String = "Stop Chiller"
+  CH3Enable = Off
+  CH3PumpEnable = On
+  Goto PumpRunOn
+
+Line PumpRunOn
+  If PowerFail = On then Goto Powerfailure
+  ValveAB_Output = 100
+  CH3String = "Pump Run On"
+  CH3Enable = Off
+  CH3PumpEnable = On
+  If TS >= PumpRunOnDelay then
+    CH3Enable = Off
+    CH3PumpEnable = Off
+    Goto RecycleTiming
+  Endif
+
+Line RecycleTiming
+  If PowerFail = On then Goto Powerfailure
+  CH3String = "Recycle Timing"
+  If CH3RecycleTimer = 0 then Goto WaitToStart
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH3FltLatch
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:59 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH3FltLatch
+  CreateTime : 29/10/2007 8:21:59 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:16:59 PM
+  InstanceId : 7046/76
+  ByteCode : 
+Line FaultNormal
+  CH3FaultLatch = Off
+  If CH3HardFault is On then Goto FaultActive
+  If CH3OutOfService is On then Goto OutOfService
+
+Line FaultActive
+  CH3FaultLatch = On
+  If MasterCCall is Off or CH3FailReset is On then
+    CH3FaultLatch = Off
+    Goto FaultNormal
+  Endif
+
+Line OutOfService
+  CH3FaultLatch = On
+  If CH3OutOfService is Off then
+    CH3FaultLatch = Off
+    Goto FaultNormal
+  Endif
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_LeadLag
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:17:00 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_LeadLag
+  CreateTime : 29/10/2007 8:22:01 AM
+  CreatedBy : Root\venue
+  TimeLocked : 17/08/2016 3:02:56 PM
+  InstanceId : 7046/101
+  ByteCode : 
+Line WaitChange
+  If (LeadLagManual = On or LeadLagTS = On) then
+    If (CH2FaultLatch = On or CH2PumpFltLatch = On) then Goto Sequence312
+    If (CH1FaultLatch = On or CH1PumpFltLatch = On) then Goto Sequence321
+    If ChrSequence = 312 then
+      Goto Sequence321
+    Else
+      Goto Sequence312
+    Endif
+  Endif
+  If ChrSequence = 312 then CHLeadLag = "Sequence312"
+  If ChrSequence = 321 then CHLeadLag = "Sequence321"
+
+
+Line Sequence321
+  If (CH2FaultLatch = On or CH2PumpFltLatch = On) then Goto Sequence312
+  ChrSequence = 321
+  CHLeadLag = "Sequence321"
+  If ((CH1FaultLatch = On or CH1PumpFltLatch = On) and (CH2FaultLatch = On or CH2PumpFltLatch = On)) or (LeadLagManual = Off and LeadLagTS = Off) then Goto WaitChange
+
+Line Sequence312
+  If (CH1FaultLatch = On or CH1PumpFltLatch = On) then Goto Sequence321
+  ChrSequence = 312
+  CHLeadLag = "Sequence312"
+  If ((CH1FaultLatch = On or CH1PumpFltLatch = On) and (CH2FaultLatch = On or CH2PumpFltLatch = On)) or (LeadLagManual = Off and LeadLagTS = Off) then Goto WaitChange
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH1RecycTime
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:59 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH1RecycTime
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 22/04/2016 2:14:03 PM
+  InstanceId : 7046/104
+  ByteCode : 
+Line Powerfailure
+  CH1RecycleTimer = 0
+  CH1RecycleStatus = Off
+  If PowerFail is Off then Goto WaitToSetTimer
+
+Line WaitToSetTimer
+  If PowerFail is On then Goto Powerfailure
+  CH1RecycleTimer = 0
+  CH1RecycleStatus = Off
+  If CH1Enable is On then Goto SetTimer
+
+Line SetTimer
+  CH1RecycleTimer = RecycleTime_SP
+  Goto TimingDown
+
+Line TimingDown
+  If PowerFail = On then Goto Powerfailure
+  CH1RecycleStatus = On
+  CH1RecycleTimer = max((RecycleTime_SP - TM), 0)
+  If CH1RecycleTimer = 0 then Goto TimerAtZero
+
+Line TimerAtZero
+  CH1RecycleTimer = 0
+  CH1RecycleStatus = Off
+  If CH1Enable is Off then Goto WaitToSetTimer
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH2RecycTime
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:59 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH2RecycTime
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 22/04/2016 2:14:28 PM
+  InstanceId : 7046/105
+  ByteCode : 
+Line Powerfailure
+  CH2RecycleTimer = 0
+  CH2RecycleStatus = Off
+  If PowerFail is Off then Goto WaitToSetTimer
+
+Line WaitToSetTimer
+  If PowerFail is On then Goto Powerfailure
+  CH2RecycleTimer = 0
+  CH2RecycleStatus = Off
+  If CH2Enable is On then Goto SetTimer
+
+Line SetTimer
+  CH2RecycleTimer = RecycleTime_SP
+  Goto TimingDown
+
+Line TimingDown
+  If PowerFail = On then Goto Powerfailure
+  CH2RecycleStatus = On
+  CH2RecycleTimer = max((RecycleTime_SP - TM), 0)
+  If CH2RecycleTimer = 0 then Goto TimerAtZero
+
+Line TimerAtZero
+  CH2RecycleTimer = 0
+  CH2RecycleStatus = Off
+  If CH2Enable is Off then Goto WaitToSetTimer
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_CH3RecycTime
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:17:00 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_CH3RecycTime
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 21/04/2016 3:17:00 PM
+  InstanceId : 7046/106
+  ByteCode : 
+Line Powerfailure
+  CH3RecycleTimer = 0
+  CH3RecycleStatus = Off
+  If PowerFail is Off then Goto WaitToSetTimer
+
+Line WaitToSetTimer
+  If PowerFail is On then Goto Powerfailure
+  CH3RecycleTimer = 0
+  CH3RecycleStatus = Off
+  If CH3Enable is On then Goto SetTimer
+
+Line SetTimer
+  CH3RecycleTimer = RecycleTime_SP
+  Goto TimingDown
+
+Line TimingDown
+  If PowerFail = On then Goto Powerfailure
+  CH3RecycleStatus = On
+  CH3RecycleTimer = max((RecycleTime_SP - TM), 0)
+  If CH3RecycleTimer = 0 then Goto TimerAtZero
+
+Line TimerAtZero
+  CH3RecycleTimer = 0
+  CH3RecycleStatus = Off
+  If CH3Enable is Off then Goto WaitToSetTimer
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Ctl_Bypass
+  Type : InfinityProgram
+  LastChange : 15/09/2016 10:47:15 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Ctl_Bypass
+  CreateTime : 29/10/2007 8:22:02 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 10:47:15 AM
+  InstanceId : 7046/109
+  ByteCode : 
+Line PowerFailure
+  ValveAB_Output = 100
+  If PowerFail = Off then Goto PumpsOff
+
+Line PumpsOff
+  If PowerFail = On then Goto PowerFailure
+  ValveAB_Output = 100
+  If CH1PumpEnable is On or CH2PumpEnable is On or CH3PumpEnable is On then Goto WaitTime
+
+
+Line WaitTime
+  If PowerFail = On then Goto PowerFailure
+  If CH1PumpEnable is Off and CH2PumpEnable is Off and CH3PumpEnable is Off then Goto PumpsOff
+  If TS > 20 then Goto AdjustOutput
+
+Line AdjustOutput
+  If (MaxDPError >= (DpError_SP - 0.5)) and (MaxDPError <= (DpError_SP + 0.5)) then ValveAB_Output = ValveAB_Output
+  If (MaxDPError < (DpError_SP - 0.5)) and (MaxDPError >= (DpError_SP - 1)) then ValveAB_Output = minimum((ValveAB_Output + 0.5), 100)
+  If (MaxDPError < (DpError_SP - 1)) and (MaxDPError >= (DpError_SP - 2.5)) then ValveAB_Output = minimum((ValveAB_Output + 1), 100)
+  If (MaxDPError < (DpError_SP - 3.5)) then ValveAB_Output = minimum((ValveAB_Output + 3.5), 100)
+  If (MaxDPError > (DpError_SP + 0.5)) and (MaxDPError <= (DpError_SP + 1)) then ValveAB_Output = max((ValveAB_Output - 0.5), 0)
+  If (MaxDPError > (DpError_SP + 1)) and (MaxDPError <= (DpError_SP + 2.5)) then ValveAB_Output = max((ValveAB_Output - 1), 0)
+  If (MaxDPError > (DpError_SP + 3.5)) then ValveAB_Output = max((ValveAB_Output - 3.5), 0)
+  If TS > 5 then Goto WaitTime
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_EconomyMode
+  Type : InfinityProgram
+  LastChange : 15/09/2016 9:04:04 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Set_EconomyMode
+  CreateTime : 29/10/2007 8:22:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:04:04 AM
+  InstanceId : 7046/119
+  ByteCode : 
+
+Numeric deadband
+
+Line CalcEnthalpy
+
+  deadband = 2 'kJ/kg
+  Enthalpy = (1.006 * OSAirTemp - 0.026) + (OSAirHumidity / 100) * (2.501 + 1.84 * OSAirTemp) 'kJ/kg
+  If Enthalpy < (EnthalpySP + deadband / 2) then Goto EconModeOn
+  If Enthalpy >= (EnthalpySP - deadband / 2) then Goto econmodeoff
+  If (EnthalpySP + deadband / 2) > Enthalpy >= (EnthalpySP - deadband / 2) then Goto wait
+
+Line EconModeOn
+  EconomyMode = On
+  If Enthalpy >= (EnthalpySP) then Goto wait
+
+
+Line econmodeoff
+  EconomyMode = Off
+  If Enthalpy < (EnthalpySP) then Goto wait
+
+
+Line wait
+  EconomyMode = EconomyMode
+  If TS > 60 then Goto CalcEnthalpy
+
+
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Globals_P1
+  Type : InfinityProgram
+  LastChange : 22/04/2016 2:10:20 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Globals_P1
+  CreateTime : 29/10/2007 8:48:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:02:44 AM
+  InstanceId : 7046/121
+  ByteCode : 
+Line LoopForEver
+  If TS > 9 then Goto ImportPoints1
+
+Line ImportPoints1
+  ChwFieldDp_In = SkilledPark\Bcx1\GW1_6\ChwSysPressure
+  Goto LoopForEver
+
+Line E
+  If TS > 15 then Goto LoopForEver
+  EndByteCode
+ EndObject
+
+ Object : Globals_P2
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:57 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Globals_P2
+  CreateTime : 29/10/2007 3:37:55 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 9:02:53 AM
+  InstanceId : 7046/133
+  ByteCode : 
+Line LoopForEver
+  If TS > 59 then Goto ImportPoints1
+
+Line ImportPoints1
+  MasterTimSt_In = MasterTimSt_In
+  Goto LoopForEver
+
+Line E
+  If TS > 30 then Goto LoopForEver
+
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Calcs
+  Type : InfinityProgram
+  LastChange : 15/09/2016 10:41:11 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Calcs
+  CreateTime : 1/11/2007 7:26:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/09/2016 12:33:22 PM
+  InstanceId : 7046/142
+  ByteCode : 
+Line Wait
+  If TS > 21 then Goto LoopForEver
+
+Line LoopForEver
+
+'Set CH1Available 
+  If CH1FaultLatch or CH1PumpFltLatch or (CH1Enable is Off and CH1RecycleStatus is On) then
+    CH1Available = Off
+  Else
+    CH1Available = On
+  Endif
+
+'Set CH2Available 
+  If CH2FaultLatch or CH2PumpFltLatch or (CH2Enable is Off and CH2RecycleStatus is On) then
+    CH2Available = Off
+  Else
+    CH2Available = On
+  Endif
+
+'Set CH3Available
+  If CH3FaultLatch or CH3PumpFltLatch or (CH3Enable is Off and CH3RecycleStatus is On) then
+    CH3Available = Off
+  Else
+    CH3Available = On
+  Endif
+
+'Converts delay down time, 10'C - 8'C to 15Mins-2Mins
+  StageDwnDelay_SP = minimum((max(((ComRetTemp * 6.5) - 50), 2)), 15)
+
+'Converts delay up time, 14'C - 17'C to 20Mins-5Mins
+  StageUpDelay_SP = minimum((max((90 - (ComRetTemp * 5)), 5)), 20)
+
+'Total Running Load Amps
+  TotalPercentRla = ((CH1PercentRla * CH1Status) + (CH2PercentRla * CH2Status) + (CH3PercentRla * CH3Status)) / (CH1Status + CH2Status + CH3Status + (not CH1Status and not CH2Status and not CH3Status))
+
+'Total kWr
+  CH1ActivekWr = 493 * (CH1PercentRla / 100) * CH1Status
+  CH2ActivekWr = 493 * (CH2PercentRla / 100) * CH2Status
+  CH3ActivekWr = 249 * (CH3PercentRla / 100) * CH3Status
+  TotalActiveKWr = CH1ActivekWr + CH2ActivekWr + CH3ActivekWr
+
+'Valve Outputs
+  BypassValve1 = maximum(BValve1MinPos, (minimum((ValveAB_Output * 2), 100)))
+  BypassValve2 = minimum((max((ValveAB_Output - 50), 0) * 2), 100)
+
+'Vessel DP
+  CH1VesselDP = (CH1PumpAI2 * 0.5)
+  CH2VesselDP = (CH2PumpAI2 * 0.5)
+  CH3VesselDP = (CH3PumpAI2 * 0.5) 'CH3PumpStatus
+
+'Chiller Hard Faults
+  If CH1AlmValue = 2 then CH1HardFault = On Else CH1HardFault = Off
+  If CH2AlmValue = 2 then CH2HardFault = On Else CH2HardFault = Off
+  If CH3AlmValue = 2 then CH3HardFault = On Else CH3HardFault = Off
+
+'Chiller DP Error Selection
+  CH1DpError = (CH1VesselDP - CH1VesselDP_SP) * CH1PumpStatus
+  CH2DpError = (CH2VesselDP - CH2VesselDP_SP) * CH2PumpStatus
+  CH3DpError = (CH3VesselDP - CH3VesselDP_SP) * CH3PumpStatus
+  If CH1PumpStatus is On and CH2PumpStatus is Off and CH3PumpStatus is Off then
+    MaxDPError = CH1DpError
+  Else
+    If CH1PumpStatus is Off and CH2PumpStatus is On and CH3PumpStatus is Off then
+      MaxDPError = CH2DpError
+    Endif
+    If CH1PumpStatus is Off and CH2PumpStatus is Off and CH3PumpStatus is On then
+      MaxDPError = CH3DpError
+    Endif
+    If CH1PumpStatus is On and CH2PumpStatus is On and CH3PumpStatus is Off then
+      MaxDPError = minimum(CH1DpError, CH2DpError)
+    Endif
+    If CH1PumpStatus is On and CH2PumpStatus is Off and CH3PumpStatus is On then
+      MaxDPError = minimum(CH1DpError, CH3DpError)
+    Endif
+    If CH1PumpStatus is Off and CH2PumpStatus is On and CH3PumpStatus is On then
+      MaxDPError = minimum(CH2DpError, CH3DpError)
+    Endif
+    If CH1PumpStatus is On and CH2PumpStatus is On and CH3PumpStatus is On then
+      MaxDPError = minimum(CH1DpError, CH2DpError, CH3DpError)
+    Endif
+    If CH1PumpStatus is Off and CH2PumpStatus is Off and CH3PumpStatus is Off then MaxDPError = 0
+  Endif
+  Goto Wait
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Reset_ManLeadLag
+  Type : InfinityProgram
+  LastChange : 17/08/2016 3:02:26 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Reset_ManLeadLag
+  CreateTime : 9/01/2008 2:40:54 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 15/09/2016 9:03:13 AM
+  InstanceId : 7046/152
+  ByteCode : 
+Line Check1
+  If LeadLagManual = On then Goto wait1
+
+Line wait1
+  If TS > 30 then Goto reset1
+
+Line reset1
+  LeadLagManual = Off
+  Goto Check1
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Reset_CH1FltRst
+  Type : InfinityProgram
+  LastChange : 22/04/2016 2:10:36 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Reset_CH1FltRst
+  CreateTime : 10/01/2008 11:54:10 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 15/09/2016 9:03:08 AM
+  InstanceId : 7046/153
+  ByteCode : 
+Line Check1
+  If CH1FailReset = On then Goto wait1
+
+Line wait1
+  If TS > 60 then Goto reset1
+
+Line reset1
+  CH1FailReset = Off
+  Goto Check1
+  EndByteCode
+ EndObject
+
+ Object : Reset_CH2FltRst
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:58 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Reset_CH2FltRst
+  CreateTime : 10/01/2008 11:54:53 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 22/04/2016 2:13:16 PM
+  InstanceId : 7046/154
+  ByteCode : 
+Line Check1
+  If CH2FailReset = On then Goto wait1
+
+Line wait1
+  If TS > 60 then Goto reset1
+
+Line reset1
+  CH2FailReset = Off
+  Goto Check1
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Reset_CH3FltRst
+  Type : InfinityProgram
+  LastChange : 21/04/2016 3:16:58 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Reset_CH3FltRst
+  CreateTime : 10/01/2008 11:55:25 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 17/08/2016 3:04:02 PM
+  InstanceId : 7046/155
+  ByteCode : 
+Line Check1
+  If CH3FailReset = On then Goto wait1
+
+Line wait1
+  If TS > 60 then Goto reset1
+
+Line reset1
+  CH3FailReset = Off
+  Goto Check1
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : ACCFlashWRCount
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCFlashWRCount
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/229
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLastBackup
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLastBackup
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/242
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1/01/1989
+ EndObject
+
+ Object : ACCLCDAnswerStr
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDAnswerStr
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/241
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDBacklight
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDBacklight
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/240
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine1
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDDispLine1
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/238
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine2
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDDispLine2
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/237
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine3
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDDispLine3
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/236
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine4
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDDispLine4
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/235
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispMode
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDDispMode
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/239
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDKeyStroke
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDKeyStroke
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/234
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDTimeFormat
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDTimeFormat
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/233
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1
+ EndObject
+
+ Object : ACCLCDUserPresnt
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDUserPresnt
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/231
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDViewPasswd
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCLCDViewPasswd
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/232
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCRestartMode
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCRestartMode
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/228
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : ACCWarmToCool
+ EndObject
+
+ Object : ACCStatusBackup
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:54 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCStatusBackup
+  CreateTime : 3/09/2007 11:10:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 2/04/2009 10:34:39 AM
+  Properties : 1
+  InstanceId : 7046/243
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : ACCBackupNow
+ EndObject
+
+ Object : ACCStatusFlash
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:54 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : ACCStatusFlash
+  CreateTime : 3/09/2007 11:10:54 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/230
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Alarms
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Alarms
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 29/03/2016 7:31:35 AM
+  Properties : 1
+  InstanceId : 7046/214
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Date
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Date
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:48 AM
+  Properties : 1
+  InstanceId : 7046/211
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1/01/1989
+ EndObject
+
+ Object : Dayofmonth
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Dayofmonth
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:48 AM
+  Properties : 1
+  InstanceId : 7046/205
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Dayofyear
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Dayofyear
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:48 AM
+  Properties : 1
+  InstanceId : 7046/210
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Errors
+  Type : InfinitySystemVariable
+  LastChange : 1/11/2007 2:18:24 PM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Errors
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 2/04/2009 8:14:33 AM
+  Properties : 1
+  InstanceId : 7046/213
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Freemem
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Freemem
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 1/11/2007 1:39:41 PM
+  Properties : 1
+  InstanceId : 7046/215
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Hour
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Hour
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 24/01/2008 8:57:35 AM
+  Properties : 1
+  InstanceId : 7046/203
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Hourofday
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Hourofday
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:48 AM
+  Properties : 1
+  InstanceId : 7046/208
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : LCDPassword
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : LCDPassword
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/255
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Minute
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Minute
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 24/01/2008 8:58:02 AM
+  Properties : 1
+  InstanceId : 7046/202
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Month
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Month
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:48 AM
+  Properties : 1
+  InstanceId : 7046/206
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 
+ EndObject
+
+ Object : PowerFail
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : PowerFail
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 18/12/2007 6:58:18 AM
+  Properties : 1
+  InstanceId : 7046/217
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : PowerUpTime
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : PowerUpTime
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/218
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1/01/1989
+ EndObject
+
+ Object : Scan
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:52 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Scan
+  CreateTime : 3/09/2007 11:10:52 AM
+  CreatedBy : Root\venue
+  TimeLocked : 2/04/2009 8:14:37 AM
+  Properties : 1
+  InstanceId : 7046/212
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Second
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Second
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 2/11/2007 8:48:25 AM
+  Properties : 1
+  InstanceId : 7046/201
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Timeofday
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Timeofday
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/209
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 12:00:00 AM
+ EndObject
+
+ Object : Version
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Version
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/216
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 0.000000
+ EndObject
+
+ Object : Weekday
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Weekday
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/204
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 
+ EndObject
+
+ Object : Year
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:10:53 AM
+  DeviceId : SkilledPark\Bcx2\CHW1
+  Alias : Year
+  CreateTime : 3/09/2007 11:10:53 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:14:49 AM
+  Properties : 1
+  InstanceId : 7046/207
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+EndInfinetCtlr

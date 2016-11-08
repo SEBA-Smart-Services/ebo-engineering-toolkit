@@ -1,0 +1,1681 @@
+' Date : 10/26/16 10:17:26 AM
+' User : Root\sebb
+' Version :  2.0.0.20140808
+
+Continuum
+Network
+
+Path : SkilledPark\Bcx2
+
+Dictionary : 
+
+'TYPE                   : NAME                   : TEMPLATE : PORT  : SERIALNUM    : INFINETID  : MODEL      : ALIAS
+ InfinityInfinetCtlr    : CHW2                   : False    : comm2 : 2115265      : 4          : b3867      : CHW2
+EndDictionary
+
+Dictionary : CHW2
+
+ 'TYPE                   : DEVICE                       : NAME                   : TEMPLATE : ALIAS
+  Report                 : SkilledPark\Bcx2\CHW2        : ChwUse.rpt             : False    : ChwUse.rpt
+  EventNotification      : SkilledPark\Bcx2\CHW2        : Cos_P2                 : False    : Cos_P2
+  Schedule               : SkilledPark\Bcx2\CHW2        : DailyRes02Meter        : False    : DailyRes02Meter
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : ChwMeterReset          : False    : ChwMeterReset
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : MarkRemove             : False    : MarkRemove
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : MeterReset             : False    : MeterReset
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseChwLastMth          : False    : UseChwLastMth
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseChwLastWeek         : False    : UseChwLastWeek
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseChwThisMth          : False    : UseChwThisMth
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseChwThisWeek         : False    : UseChwThisWeek
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseChwToday            : False    : UseChwToday
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseChwYesterday        : False    : UseChwYesterday
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseMssbLastMth         : False    : UseMssbLastMth
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseMssbLastWeek        : False    : UseMssbLastWeek
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseMssbThisMth         : False    : UseMssbThisMth
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseMssbThisWeek        : False    : UseMssbThisWeek
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseMssbToday           : False    : UseMssbToday
+  InfinityNumeric        : SkilledPark\Bcx2\CHW2        : UseMssbYesterday       : False    : UseMssbYesterday
+  InfinityInput          : SkilledPark\Bcx2\CHW2        : ChwMakeupMeter         : False    : ChwMakeupMeter
+  InfinityInput          : SkilledPark\Bcx2\CHW2        : CHWMakeupPressure      : False    : CHWMakeupPressur
+  InfinityInput          : SkilledPark\Bcx2\CHW2        : MssbkWhMeter           : False    : MssbkWhMeter
+  Group                  : SkilledPark\Bcx2\CHW2        : FiringOrder            : False    : FiringOrder
+  InfinityProgram        : SkilledPark\Bcx2\CHW2        : Set_TempAlarm          : False    : Set_TempAlarm
+  InfinityProgram        : SkilledPark\Bcx2\CHW2        : Set_Meter              : False    : Set_Meter
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCFlashWRCount        : False    : ACCFlashWRCount
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLastBackup          : False    : ACCLastBackup
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDAnswerStr        : False    : ACCLCDAnswerStr
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDBacklight        : False    : ACCLCDBacklight
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDDispLine1        : False    : ACCLCDDispLine1
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDDispLine2        : False    : ACCLCDDispLine2
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDDispLine3        : False    : ACCLCDDispLine3
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDDispLine4        : False    : ACCLCDDispLine4
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDDispMode         : False    : ACCLCDDispMode
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDKeyStroke        : False    : ACCLCDKeyStroke
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDTimeFormat       : False    : ACCLCDTimeFormat
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDUserPresnt       : False    : ACCLCDUserPresnt
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCLCDViewPasswd       : False    : ACCLCDViewPasswd
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCRestartMode         : False    : ACCRestartMode
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCStatusBackup        : False    : ACCStatusBackup
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : ACCStatusFlash         : False    : ACCStatusFlash
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Alarms                 : False    : Alarms
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Date                   : False    : Date
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Dayofmonth             : False    : Dayofmonth
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Dayofyear              : False    : Dayofyear
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Errors                 : False    : Errors
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Freemem                : False    : Freemem
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Hour                   : False    : Hour
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Hourofday              : False    : Hourofday
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : LCDPassword            : False    : LCDPassword
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Minute                 : False    : Minute
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Month                  : False    : Month
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : PowerFail              : False    : PowerFail
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : PowerUpTime            : False    : PowerUpTime
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Scan                   : False    : Scan
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Second                 : False    : Second
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Timeofday              : False    : Timeofday
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Version                : False    : Version
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Weekday                : False    : Weekday
+  InfinitySystemVariable : SkilledPark\Bcx2\CHW2        : Year                   : False    : Year
+EndDictionary
+
+Object : CHW2
+ Type : InfinityInfinetCtlr
+ LastChange : 25/09/2007 11:03:37 AM
+ DeviceId : SkilledPark\Bcx2
+ Alias : CHW2
+ CreateTime : 3/09/2007 11:21:30 AM
+ CreatedBy : Root\venue
+ TimeLocked : 13/06/2015 8:06:58 AM
+ InstanceId : 7002/7047
+ CntrlType : b3867
+ InfinetId : 4
+ Location : MSSB 3W6
+ NetworkId : 11
+ Port : comm2
+ SerialNum : 2115265
+ VersionNum : 4.500064
+ BACnetDeviceId : 2115265
+EndObject
+
+InfinetCtlr : CHW2
+ Object : ChwUse.rpt
+  Type : Report
+  LastChange : 7/07/2008 1:33:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ChwUse.rpt
+  CreateTime : 7/07/2008 1:32:20 PM
+  CreatedBy : Root\TAC
+  TimeLocked : 7/07/2008 1:33:37 PM
+  InstanceId : 7047/7001
+  ChartType : Text
+  ChartSubType : Root\AccTextHtml
+  ReportStartDate : 7/07/2008 12:31:00 PM
+  ReportEndDate : 7/07/2008 1:31:02 PM
+  FirstMemberList : 
+  {
+   ..\USECHWLASTMTH
+   ..\USECHWLASTWEEK
+   ..\USECHWTHISMTH
+   ..\USECHWTHISWEEK
+   ..\USECHWTODAY
+   ..\USECHWYESTERDAY
+   ..\USEMSSBLASTMTH
+   ..\USEMSSBLASTWEEK
+   ..\USEMSSBTHISMTH
+   ..\USEMSSBTHISWEEK
+   ..\USEMSSBTODAY
+   ..\USEMSSBYESTERDAY
+  }
+  EndOfCDT
+  SecondMemberList : 
+  {
+  }
+  EndOfCDT
+  ReportHeading : CHW USE
+  ReportSubheading : Report created at %t
+  ReportXCaption : Object Name
+  ReportYCaption : %u
+  ReportFootnote : %p
+  ColumnList : PointName,PointValue
+  PathId : SkilledPark\Bcx2\CHW2
+  AttributeFilter : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Cos_P2
+  Type : EventNotification
+  LastChange : 24/01/2008 1:07:16 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Cos_P2
+  CreateTime : 3/09/2007 12:26:37 PM
+  CreatedBy : Root\venue
+  TimeLocked : 24/01/2008 1:07:16 PM
+  InstanceId : 7047/25
+  EventNotificationId : 25
+  NCLSPriority : 
+  {
+   2
+   0
+   2
+  }
+  EndOfCDT
+  AckRequired : ToOffnormal,ToNormal
+  RecipientList : 
+  {
+  }
+  EndOfCDT
+  AlarmOptions : DisplayPanel,BlinkOnAlarm,EmailOnOffNormal,EmailToNormal,EmailToFault,EmailAck,PageToOffNormal,PageToNormal,PageToFault,PageAck
+  EMailRecipients : 
+  {
+  }
+  EndOfCDT
+  PagingRecipients : 
+  {
+  }
+  EndOfCDT
+  AlarmFont : F5FFFFFF0000000000000000000000009001000000000000000000004D53205368656C6C20446C6700D5E7020000000005787700BCC9E70274D5E70200000000
+  ToRTNFont : F5FFFFFF0000000000000000000000009001000000000000000000004D53205368656C6C20446C6700D5E7020000000005787700BCC9E70274D5E70200000000
+  ToFaultFont : F5FFFFFF0000000000000000000000009001000000000000000000004D53205368656C6C20446C6700D5E7020000000005787700BCC9E70274D5E70200000000
+  LocalRecipientList : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : DailyRes02Meter
+  Type : Schedule
+  LastChange : 15/04/2014 11:27:00 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : DailyRes02Meter
+  CreateTime : 3/09/2007 12:26:34 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/04/2014 11:27:00 AM
+  InstanceId : 7047/1
+  Value : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  Description : Resets daily reading
+  EffectivePeriod : 
+  {
+   startdate : 1/01/1989
+   enddate : 15/03/2030
+  }
+  EndOfCDT
+  WeeklySchedule : 
+  {
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+   {
+    TimeValueList : 
+    {
+     {
+      time : 11:58:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 1
+      }
+     }
+     {
+      time : 11:59:00 PM
+      value : 
+      {
+       Type : 19
+       Value : 0
+      }
+     }
+    }
+   }
+  }
+  EndOfCDT
+  ExceptionSched : 
+  {
+  }
+  EndOfCDT
+  PropertyRef : 
+  {
+   {
+    objectIdentifier : CHWMETERRESET
+    propertyIdentifier : 85
+    propertyArrayIndex : 0
+    deviceIdentifier : 
+   }
+   {
+    objectIdentifier : METERRESET
+    propertyIdentifier : 85
+    propertyArrayIndex : 0
+    deviceIdentifier : 
+   }
+  }
+  EndOfCDT
+  Priority : 10
+  OccupancyTime : 1/01/1989
+  UnoccupancyTime : 1/01/1989
+  CalenderRefList : 
+  {
+  }
+  EndOfCDT
+  WeeklySchNotes : 
+  {
+
+
+
+
+
+
+
+  }
+  EndOfCDT
+  ExcSchedNotes : 
+  {
+  }
+  EndOfCDT
+  ActiveValue : 
+  {
+   Type : 2
+   Value : 1
+  }
+  EndOfCDT
+  InactiveValue : 
+  {
+   Type : 2
+   Value : 0
+  }
+  EndOfCDT
+  PackagedDays : 
+  {
+   {
+    PackagedDaysName : 
+    PackagedDaysId : 0
+    BackColor : 0
+    ForeColor : 0
+    MaxTimeInterval : 0
+    EventList : 
+    {
+    }
+    Priority : 0
+   }
+   {
+    PackagedDaysName : Monday
+    PackagedDaysId : 1
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Tuesday
+    PackagedDaysId : 2
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Wednesday
+    PackagedDaysId : 3
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Thursday
+    PackagedDaysId : 4
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Friday
+    PackagedDaysId : 5
+    BackColor : 4292667120
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Saturday
+    PackagedDaysId : 6
+    BackColor : 4289382620
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Sunday
+    PackagedDaysId : 7
+    BackColor : 4289382620
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+     {
+      DateTime : 1/01/1996 11:58:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 1
+      }
+      Note : 
+     }
+     {
+      DateTime : 1/01/1996 11:59:00 PM
+      Value : 
+      {
+       Type : 19
+       Value : 0
+      }
+      Note : 
+     }
+    }
+    Priority : 16
+   }
+   {
+    PackagedDaysName : Holiday
+    PackagedDaysId : 8
+    BackColor : 4294901760
+    ForeColor : 0
+    MaxTimeInterval : 3
+    EventList : 
+    {
+    }
+    Priority : 16
+   }
+  }
+  EndOfCDT
+  AutosendTime : 1 12:00:00 AM
+  SpecialEventName : 
+  {
+  }
+  EndOfCDT
+  ScheduleDefault : 
+  {
+   Type : 65535
+   Value : 080000001100FFFF
+  }
+  EndOfCDT
+  DefaultDataType : 3
+  DefaultMidnightValue : 
+  {
+   time : 12:00:00 AM
+   value : 
+   {
+    Type : 19
+    Value : 0
+   }
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ChwMeterReset
+  Type : InfinityNumeric
+  LastChange : 5/09/2007 10:22:30 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ChwMeterReset
+  CreateTime : 5/09/2007 10:20:03 AM
+  CreatedBy : Root\venue
+  TimeLocked : 15/04/2014 11:27:09 AM
+  InstanceId : 7047/26
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : MarkRemove
+  Type : InfinityNumeric
+  LastChange : 8/10/2007 2:30:15 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : MarkRemove
+  CreateTime : 8/10/2007 2:30:15 PM
+  CreatedBy : Root\venue
+  TimeLocked : 8/10/2007 2:30:15 PM
+  InstanceId : 7047/27
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   0.000
+ EndObject
+
+ Object : MeterReset
+  Type : InfinityNumeric
+  LastChange : 5/09/2007 10:04:36 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : MeterReset
+  CreateTime : 3/09/2007 12:26:35 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/04/2014 11:27:19 AM
+  InstanceId : 7047/10
+  Format : $###
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : Off
+  ElecType : Digital
+ EndObject
+
+ Object : UseChwLastMth
+  Type : InfinityNumeric
+  LastChange : 10/01/2008 1:11:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseChwLastMth
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/04/2014 11:27:30 AM
+  InstanceId : 7047/20
+  Format : ######.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0.0
+ EndObject
+
+ Object : UseChwLastWeek
+  Type : InfinityNumeric
+  LastChange : 10/01/2008 1:11:26 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseChwLastWeek
+  CreateTime : 3/09/2007 12:26:37 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/04/2014 11:27:37 AM
+  InstanceId : 7047/22
+  Format : ######.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0.0
+ EndObject
+
+ Object : UseChwThisMth
+  Type : InfinityNumeric
+  LastChange : 10/01/2008 1:11:32 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseChwThisMth
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 12/03/2016 11:11:09 AM
+  InstanceId : 7047/19
+  Format : ######.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0.0
+ EndObject
+
+ Object : UseChwThisWeek
+  Type : InfinityNumeric
+  LastChange : 10/01/2008 1:11:20 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseChwThisWeek
+  CreateTime : 3/09/2007 12:26:37 PM
+  CreatedBy : Root\venue
+  TimeLocked : 11/03/2016 4:58:55 PM
+  InstanceId : 7047/21
+  Format : ######.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0.0
+ EndObject
+
+ Object : UseChwToday
+  Type : InfinityNumeric
+  LastChange : 10/01/2008 1:11:10 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseChwToday
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 2/05/2008 3:37:51 PM
+  InstanceId : 7047/17
+  Format : ######.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0.0
+ EndObject
+
+ Object : UseChwYesterday
+  Type : InfinityNumeric
+  LastChange : 10/01/2008 1:11:15 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseChwYesterday
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/04/2014 11:27:52 AM
+  InstanceId : 7047/18
+  Format : ######.#
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0.0
+ EndObject
+
+ Object : UseMssbLastMth
+  Type : InfinityNumeric
+  LastChange : 18/04/2008 12:10:47 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseMssbLastMth
+  CreateTime : 3/09/2007 12:26:35 PM
+  CreatedBy : Root\venue
+  TimeLocked : 18/04/2008 12:10:47 PM
+  InstanceId : 7047/11
+  Format : ######
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   5124
+ EndObject
+
+ Object : UseMssbLastWeek
+  Type : InfinityNumeric
+  LastChange : 18/04/2008 12:10:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseMssbLastWeek
+  CreateTime : 3/09/2007 12:26:34 PM
+  CreatedBy : Root\venue
+  TimeLocked : 18/04/2008 12:10:37 PM
+  InstanceId : 7047/7
+  Format : ######
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   1024
+ EndObject
+
+ Object : UseMssbThisMth
+  Type : InfinityNumeric
+  LastChange : 18/04/2008 12:10:43 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseMssbThisMth
+  CreateTime : 3/09/2007 12:26:35 PM
+  CreatedBy : Root\venue
+  TimeLocked : 18/04/2008 12:10:43 PM
+  InstanceId : 7047/12
+  Format : ######
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :   2568
+ EndObject
+
+ Object : UseMssbThisWeek
+  Type : InfinityNumeric
+  LastChange : 18/04/2008 12:10:31 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseMssbThisWeek
+  CreateTime : 3/09/2007 12:26:35 PM
+  CreatedBy : Root\venue
+  TimeLocked : 18/04/2008 12:10:31 PM
+  InstanceId : 7047/8
+  Format : ######
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :    787
+ EndObject
+
+ Object : UseMssbToday
+  Type : InfinityNumeric
+  LastChange : 18/04/2008 12:10:17 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseMssbToday
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 14/07/2014 12:50:41 PM
+  InstanceId : 7047/14
+  Format : ######
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :      0
+ EndObject
+
+ Object : UseMssbYesterday
+  Type : InfinityNumeric
+  LastChange : 18/04/2008 12:10:24 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : UseMssbYesterday
+  CreateTime : 3/09/2007 12:26:35 PM
+  CreatedBy : Root\venue
+  TimeLocked : 18/04/2008 12:10:24 PM
+  InstanceId : 7047/13
+  Format : ######
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value :    228
+ EndObject
+
+ Object : ChwMakeupMeter
+  Type : InfinityInput
+  LastChange : 20/02/2008 12:38:37 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ChwMakeupMeter
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 26/05/2016 8:25:25 AM
+  InstanceId : 7047/16
+  Channel : 2
+  Conversion : (ChwMakeupMeter + (ChwMakeupMeter ElecValue * 5)) * (not ChwMeterReset)
+  DigitalFilter : False
+  ElecType : Counter
+  Format : #####
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : liters
+  Value :   295
+ EndObject
+
+ Object : CHWMakeupPressure
+  Type : InfinityInput
+  LastChange : 10/01/2008 10:22:39 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : CHWMakeupPressur
+  CreateTime : 3/09/2007 12:26:37 PM
+  CreatedBy : Root\venue
+  TimeLocked : 15/08/2016 1:47:36 PM
+  InstanceId : 7047/23
+  Channel : 3
+  DigitalFilter : False
+  ElecScaleTop : 5
+  EngScaleTop : 10
+  Format : ##.##
+  Port : 
+  Threshold : 1
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : bar
+  Value : Off
+ EndObject
+
+ Object : MssbkWhMeter
+  Type : InfinityInput
+  LastChange : 19/10/2007 11:45:20 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : MssbkWhMeter
+  CreateTime : 3/09/2007 12:26:36 PM
+  CreatedBy : Root\venue
+  TimeLocked : 17/08/2016 3:04:47 PM
+  InstanceId : 7047/15
+  Channel : 1
+  Conversion : (MssbkWhMeter + (MssbkWhMeter ElecValue * 1)) * (not MeterReset)
+  DigitalFilter : False
+  ElecType : Counter
+  Format : #####
+  Port : 
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Units : k-watt-hours
+  Value :   773
+ EndObject
+
+ Object : FiringOrder
+  Type : Group
+  LastChange : 18/04/2008 11:53:13 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : FiringOrder
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 18/04/2008 11:53:13 AM
+  InstanceId : 7047/1
+  ListOfGroupMembers : 
+  {
+   {
+    objectIdentifier : ..\SET_METER
+    listOfPropertyReferences : 
+    {
+    }
+   }
+   {
+    objectIdentifier : ..\SET_TEMPALARM
+    listOfPropertyReferences : 
+    {
+    }
+   }
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Set_TempAlarm
+  Type : InfinityProgram
+  LastChange : 12/09/2007 12:56:14 PM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Set_TempAlarm
+  CreateTime : 3/09/2007 12:26:34 PM
+  CreatedBy : Root\venue
+  TimeLocked : 17/08/2016 2:50:19 PM
+  InstanceId : 7047/2
+  ByteCode : 
+If Dayofmonth = 1 and Hour = 0 and Minute = 0 and (Second > 10 and Second < 20) then
+
+  UseMssbLastMth = UseMssbThisMth
+  UseChwLastMth = UseChwThisMth
+
+Else
+
+  UseMssbLastMth = UseMssbLastMth
+  UseChwLastMth = UseChwLastMth
+
+Endif
+
+
+
+  EndByteCode
+  Status : Active
+ EndObject
+
+ Object : Set_Meter
+  Type : InfinityProgram
+  LastChange : 18/04/2008 11:52:01 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Set_Meter
+  CreateTime : 18/04/2008 11:52:01 AM
+  CreatedBy : Root\TAC
+  TimeLocked : 17/08/2016 2:50:39 PM
+  InstanceId : 7047/29
+  ByteCode : 
+Line check1
+  MeterReset = Off
+  UseMssbToday = MssbkWhMeter
+  UseChwToday = ChwMakeupMeter
+  If (Hour = 0 and Minute = 0 and (Second > 5 and Second < 10)) then Goto calc1
+  If Weekday = Monday and Hour = 0 and Minute = 0 and (Second > 30 and Second < 35) then Goto reset1
+  If Dayofmonth = 1 and Minute = 0 and (Second > 50 and Second < 55) then Goto reset2
+
+Line calc1
+  UseMssbYesterday = UseMssbToday
+  UseChwYesterday = UseChwToday
+  UseMssbThisWeek = UseMssbThisWeek + UseMssbToday
+  UseChwThisWeek = UseChwThisWeek + UseChwToday
+  UseMssbThisMth = UseMssbThisMth + UseMssbToday
+  UseChwThisMth = UseChwThisMth + UseChwToday
+  MeterReset = On
+  Goto delay1
+
+Line reset1
+  UseMssbLastWeek = UseMssbThisWeek
+  UseChwLastWeek = UseChwThisWeek
+  UseMssbThisWeek = 0
+  UseChwThisWeek = 0
+  Goto delay1
+
+Line reset2
+  UseChwLastMth = UseChwThisMth
+  UseMssbLastMth = UseMssbThisMth
+  UseChwThisMth = 0
+  UseMssbThisMth = 0
+  Goto delay1
+
+Line delay1
+  If TS > 10 then Goto check1
+
+Line E
+  If TS > 3 then Goto check1
+  EndByteCode
+ EndObject
+
+ Object : ACCFlashWRCount
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCFlashWRCount
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/229
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLastBackup
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLastBackup
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/242
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1/01/1989
+ EndObject
+
+ Object : ACCLCDAnswerStr
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDAnswerStr
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/241
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDBacklight
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDBacklight
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/240
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine1
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDDispLine1
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/238
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine2
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDDispLine2
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/237
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine3
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDDispLine3
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/236
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispLine4
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDDispLine4
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/235
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDDispMode
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDDispMode
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/239
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDKeyStroke
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDKeyStroke
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/234
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDTimeFormat
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDTimeFormat
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/233
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1
+ EndObject
+
+ Object : ACCLCDUserPresnt
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDUserPresnt
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/231
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCLCDViewPasswd
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCLCDViewPasswd
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/232
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : ACCRestartMode
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCRestartMode
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/228
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : ACCWarmToCool
+ EndObject
+
+ Object : ACCStatusBackup
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCStatusBackup
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 27/03/2009 11:35:09 AM
+  Properties : 1
+  InstanceId : 7047/243
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : ACCBackupNow
+ EndObject
+
+ Object : ACCStatusFlash
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:32 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : ACCStatusFlash
+  CreateTime : 3/09/2007 11:21:32 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:37 AM
+  Properties : 1
+  InstanceId : 7047/230
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Alarms
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:30 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Alarms
+  CreateTime : 3/09/2007 11:21:30 AM
+  CreatedBy : Root\venue
+  Properties : 1
+  InstanceId : 7047/214
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Date
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:30 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Date
+  CreateTime : 3/09/2007 11:21:30 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/211
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1/01/1989
+ EndObject
+
+ Object : Dayofmonth
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:30 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Dayofmonth
+  CreateTime : 3/09/2007 11:21:30 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/205
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Dayofyear
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:30 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Dayofyear
+  CreateTime : 3/09/2007 11:21:30 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/210
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Errors
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Errors
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/213
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Freemem
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Freemem
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/215
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Hour
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Hour
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/203
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Hourofday
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Hourofday
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/208
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : LCDPassword
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : LCDPassword
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/255
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Minute
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Minute
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/202
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Month
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Month
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/206
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 
+ EndObject
+
+ Object : PowerFail
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : PowerFail
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/217
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : PowerUpTime
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : PowerUpTime
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/218
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 1/01/1989
+ EndObject
+
+ Object : Scan
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Scan
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/212
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Second
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Second
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 1/11/2007 12:44:46 PM
+  Properties : 1
+  InstanceId : 7047/201
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+ Object : Timeofday
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Timeofday
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/209
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 12:00:00 AM
+ EndObject
+
+ Object : Version
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Version
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/216
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 0.000000
+ EndObject
+
+ Object : Weekday
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Weekday
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/204
+  Triggers : 
+  {
+  }
+  EndOfCDT
+  Value : 
+ EndObject
+
+ Object : Year
+  Type : InfinitySystemVariable
+  LastChange : 3/09/2007 11:21:31 AM
+  DeviceId : SkilledPark\Bcx2\CHW2
+  Alias : Year
+  CreateTime : 3/09/2007 11:21:31 AM
+  CreatedBy : Root\venue
+  TimeLocked : 25/09/2007 11:03:36 AM
+  Properties : 1
+  InstanceId : 7047/207
+  Triggers : 
+  {
+  }
+  EndOfCDT
+ EndObject
+
+EndInfinetCtlr

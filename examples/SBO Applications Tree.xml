@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+			<ObjectSet ExportMode="Standard" Version="1.8.1.79" Note="TypesFirst">
+				<MetaInformation>
+					<ExportMode Value="Standard" />
+					<RuntimeVersion Value="1.8.1.79" />
+					<SourceVersion Value="1.8.1.79" />
+					<ServerFullPath Value="/SmartStruxure Server" />
+				</MetaInformation>
+				<ExportedObjects>
+<OI NAME="Applications" TYPE="system.base.Folder">
+<OI NAME="_Common" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder">
+<OI NAME="CH1Alarm" TYPE="alarm.ChangeOfStateAlarm" />
+<OI NAME="CH1PumpAlarm" TYPE="alarm.ChangeOfStateAlarm" />
+<OI NAME="CH2Alarm" TYPE="alarm.ChangeOfStateAlarm" />
+<OI NAME="CH2PumpAlarm" TYPE="alarm.ChangeOfStateAlarm" />
+<OI NAME="CH3Alarm" TYPE="alarm.ChangeOfStateAlarm" />
+<OI NAME="CH3PumpAlarm" TYPE="alarm.ChangeOfStateAlarm" />
+</OI>
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder">
+<OI NAME="LeadLagSched" TYPE="schedule.NSPDigitalSchedule" />
+<OI NAME="DailyRes02Meter" TYPE="schedule.NSPDigitalSchedule" />
+</OI>
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder">
+<OI NAME="BValve1MinPos" TYPE="server.point.AV" />
+<OI NAME="CH1ActivekWr" TYPE="server.point.AV" />
+<OI NAME="CH1AlmValue" TYPE="server.point.BV" />
+<OI NAME="CH1Available" TYPE="server.point.BV" />
+<OI NAME="CH1DpError" TYPE="server.point.BV" />
+<OI NAME="CH1FailReset" TYPE="server.point.BV" />
+<OI NAME="CH1FaultLatch" TYPE="server.point.BV" />
+<OI NAME="CH1HardFault" TYPE="server.point.BV" />
+<OI NAME="CH1HoursRun" TYPE="server.point.AV" />
+<OI NAME="CH1OutOfService" TYPE="server.point.BV" />
+<OI NAME="CH1PercentRla" TYPE="server.point.AV" />
+<OI NAME="CH1PumpAI2" TYPE="server.point.AV" />
+<OI NAME="CH1PumpFault" TYPE="server.point.BV" />
+<OI NAME="CH1PumpFltLatch" TYPE="server.point.BV" />
+<OI NAME="CH1PumpSpeed" TYPE="server.point.AV" />
+<OI NAME="CH1PumpStatus" TYPE="server.point.BV" />
+<OI NAME="CH1RecycleStatus" TYPE="server.point.BV" />
+<OI NAME="CH1RecycleTimer" TYPE="server.point.AV" />
+<OI NAME="CH1SetEnable" TYPE="server.point.BV" />
+<OI NAME="CH1VesselDP" TYPE="server.point.AV" />
+<OI NAME="CH1VesselDP_SP" TYPE="server.point.AV" />
+<OI NAME="CH2ActivekWr" TYPE="server.point.AV" />
+<OI NAME="CH2AlmValue" TYPE="server.point.BV" />
+<OI NAME="CH2Available" TYPE="server.point.BV" />
+<OI NAME="CH2DpError" TYPE="server.point.BV" />
+<OI NAME="CH2FailReset" TYPE="server.point.BV" />
+<OI NAME="CH2FaultLatch" TYPE="server.point.BV" />
+<OI NAME="CH2HardFault" TYPE="server.point.BV" />
+<OI NAME="CH2HoursRun" TYPE="server.point.AV" />
+<OI NAME="CH2OutOfService" TYPE="server.point.BV" />
+<OI NAME="CH2PercentRla" TYPE="server.point.AV" />
+<OI NAME="CH2PumpAI2" TYPE="server.point.AV" />
+<OI NAME="CH2PumpFault" TYPE="server.point.BV" />
+<OI NAME="CH2PumpFltLatch" TYPE="server.point.BV" />
+<OI NAME="CH2PumpSpeed" TYPE="server.point.AV" />
+<OI NAME="CH2PumpStatus" TYPE="server.point.BV" />
+<OI NAME="CH2RecycleStatus" TYPE="server.point.BV" />
+<OI NAME="CH2RecycleTimer" TYPE="server.point.AV" />
+<OI NAME="CH2SetEnable" TYPE="server.point.BV" />
+<OI NAME="CH2VesselDP" TYPE="server.point.AV" />
+<OI NAME="CH2VesselDP_SP" TYPE="server.point.AV" />
+<OI NAME="CH3ActivekWr" TYPE="server.point.AV" />
+<OI NAME="CH3AlmValue" TYPE="server.point.BV" />
+<OI NAME="CH3Available" TYPE="server.point.BV" />
+<OI NAME="CH3DpError" TYPE="server.point.AV" />
+<OI NAME="CH3FailReset" TYPE="server.point.BV" />
+<OI NAME="CH3FaultLatch" TYPE="server.point.BV" />
+<OI NAME="CH3FlowStatus" TYPE="server.point.BV" />
+<OI NAME="CH3HardFault" TYPE="server.point.BV" />
+<OI NAME="CH3HoursRun" TYPE="server.point.AV" />
+<OI NAME="CH3OutOfService" TYPE="server.point.BV" />
+<OI NAME="CH3PercentRla" TYPE="server.point.AV" />
+<OI NAME="CH3PumpAI2" TYPE="server.point.AV" />
+<OI NAME="CH3PumpFault" TYPE="server.point.BV" />
+<OI NAME="CH3PumpFltLatch" TYPE="server.point.BV" />
+<OI NAME="CH3PumpSpeed" TYPE="server.point.AV" />
+<OI NAME="CH3PumpStatus" TYPE="server.point.BV" />
+<OI NAME="CH3RecycleStatus" TYPE="server.point.BV" />
+<OI NAME="CH3RecycleTimer" TYPE="server.point.AV" />
+<OI NAME="CH3SetEnable" TYPE="server.point.BV" />
+<OI NAME="CH3VesselDP" TYPE="server.point.AV" />
+<OI NAME="CH3VesselDP_SP" TYPE="server.point.AV" />
+<OI NAME="ChrSequence" TYPE="server.point.AV" />
+<OI NAME="ChwFieldDp_In" TYPE="server.point.AV" />
+<OI NAME="ChwSysDp_SP" TYPE="server.point.AV" />
+<OI NAME="CurrentStep" TYPE="server.point.AV" />
+<OI NAME="DpError_SP" TYPE="server.point.AV" />
+<OI NAME="EconomyMode" TYPE="server.point.BV" />
+<OI NAME="Enthalpy" TYPE="server.point.AV" />
+<OI NAME="EnthalpySP" TYPE="server.point.AV" />
+<OI NAME="LeadLagManual" TYPE="server.point.AV" />
+<OI NAME="LeadLagTS" TYPE="server.point.BV" />
+<OI NAME="MasterCCall" TYPE="server.point.BV" />
+<OI NAME="MasterTimSt_In" TYPE="server.point.AV" />
+<OI NAME="MaxDPError" TYPE="server.point.AV" />
+<OI NAME="OSAirHum_SP" TYPE="server.point.AV" />
+<OI NAME="OSAirTemp_SP" TYPE="server.point.AV" />
+<OI NAME="RecycleTime_SP" TYPE="server.point.AV" />
+<OI NAME="RetTempMax" TYPE="server.point.AV" />
+<OI NAME="SettleTimeLeft" TYPE="server.point.AV" />
+<OI NAME="SettleTimer_SP" TYPE="server.point.AV" />
+<OI NAME="StageDownNow" TYPE="server.point.BV" />
+<OI NAME="StageDownPerc_SP" TYPE="server.point.AV" />
+<OI NAME="StageDownTemp_SP" TYPE="server.point.AV" />
+<OI NAME="StageDownTimLeft" TYPE="server.point.AV" />
+<OI NAME="StageDwnDelay_SP" TYPE="server.point.AV" />
+<OI NAME="StageUpDelay_SP" TYPE="server.point.AV" />
+<OI NAME="StageUpNow" TYPE="server.point.BV" />
+<OI NAME="StageUpPerc_SP" TYPE="server.point.AV" />
+<OI NAME="StageUpTemp_SP" TYPE="server.point.AV" />
+<OI NAME="StageUpTimLeft" TYPE="server.point.AV" />
+<OI NAME="TotalActiveKWr" TYPE="server.point.AV" />
+<OI NAME="TotalPercentRla" TYPE="server.point.AV" />
+<OI NAME="ValveAB_Output" TYPE="server.point.AV" />
+<OI NAME="ChwMeterReset" TYPE="server.point.AV" />
+<OI NAME="MarkRemove" TYPE="server.point.AV" />
+<OI NAME="MeterReset" TYPE="server.point.BV" />
+<OI NAME="UseChwLastMth" TYPE="server.point.AV" />
+<OI NAME="UseChwLastWeek" TYPE="server.point.AV" />
+<OI NAME="UseChwThisMth" TYPE="server.point.AV" />
+<OI NAME="UseChwThisWeek" TYPE="server.point.AV" />
+<OI NAME="UseChwToday" TYPE="server.point.AV" />
+<OI NAME="UseChwYesterday" TYPE="server.point.AV" />
+<OI NAME="UseMssbLastMth" TYPE="server.point.AV" />
+<OI NAME="UseMssbLastWeek" TYPE="server.point.AV" />
+<OI NAME="UseMssbThisMth" TYPE="server.point.AV" />
+<OI NAME="UseMssbThisWeek" TYPE="server.point.AV" />
+<OI NAME="UseMssbToday" TYPE="server.point.AV" />
+<OI NAME="UseMssbYesterday" TYPE="server.point.AV" />
+</OI>
+</OI>
+<OI NAME="Chilled Water" TYPE="system.base.Folder">
+<OI NAME="_Common" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="CH-1" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="CH-2" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="CH-3" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="CHWP-1" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="CHWP-2" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="CHWP-3" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+</OI>
+<OI NAME="Air Handling Units" TYPE="system.base.Folder">
+<OI NAME="_Common" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.1" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.2" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.3" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.4" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.5" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.6" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.7" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.8" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.9" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.10" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.11" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-1.12" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.1" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.2" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.3" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.4" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.5" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.6" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.7" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+<OI NAME="AHU-2.8" TYPE="system.base.Folder">
+<OI NAME="Alarms" TYPE="system.base.Folder" />
+<OI NAME="Commissioning" TYPE="system.base.Folder" />
+<OI NAME="Documents" TYPE="system.base.Folder" />
+<OI NAME="Graphics" TYPE="system.base.Folder" />
+<OI NAME="Programs" TYPE="system.base.Folder" />
+<OI NAME="Schedules" TYPE="system.base.Folder" />
+<OI NAME="Trends" TYPE="system.base.Folder" />
+<OI NAME="Variables" TYPE="system.base.Folder" />
+</OI>
+</OI>
+</OI>
+	</ExportedObjects>
+			</ObjectSet>

@@ -28,8 +28,9 @@ There are some manual steps that must first be taken in Vista.
 
 - Save the workbook.
 
-- Clone this repository
+- Clone this repository. Example usage for generating the XML for importing into SBO is provided below.
 ```python
+# This is a very long and ugly import call. I should probably clean it up one day
 from SmartStruxure-engineering-toolkit.legacy_system.vista.modbus_slave_transition import ModbusSlaveTransition
 
 # The Excel workbook you just created

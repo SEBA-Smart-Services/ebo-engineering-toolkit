@@ -1,5 +1,5 @@
 # SmartStruxure-engineering-toolkit
-A bunch of scripts and classes to automate and assist the creation and deployment of SmartStruxure objects.
+A bunch of python scripts and modules to automate and assist the creation and deployment of SmartStruxure objects.
 
 ## IO Bus
 Automatically generate an IO Bus XML file for import into StruxureWare form an Excel workbook.

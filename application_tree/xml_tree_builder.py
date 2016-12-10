@@ -1,10 +1,6 @@
 import openpyxl
 from xml.dom import minidom
 
-xlfile = 'Application Tree.xlsx'
-xmlfile = 'SBO Applications Tree.xml'
-objects_xlfile = 'ddc_objects.xlsx'
-
 # <?xml version="1.0" encoding="utf-8"?>
 # <ObjectSet ExportMode="Standard" Version="1.8.1.79" Note="TypesFirst">
 #   <MetaInformation>
@@ -193,14 +189,22 @@ class ApplicationTreeBuilder(object):
 
 		xml_str += '\n' + self.create_folder_by_name('Applications', application_folders)
 
-		xml_str += '\n' +self. xml_foot
+		xml_str += '\n' +self.xml_foot
 		
 		if print_result:
 			print(xml_str)
 		if write_result:
 			with open(xmlfile, "w") as outfile:
 				outfile.write(xml_str)
-	
 
-apptreebuilder = ApplicationTreeBuilder(xlfile=xlfile, xmlfile=xmlfile, commonobjects_xlfile=objects_xlfile)
-apptreebuilder.make_xml(write_result=True)
+
+# EXECUTE
+if __name__ == "__main__":
+	# declare filenames/paths here
+	xlfile = 'Application Tree.xlsx'
+	xmlfile = 'SBO Applications Tree.xml'
+	objects_xlfile = 'ddc_objects.xlsx'
+	
+	# instantiate ApplicationTreeBuilder object and make xml
+	apptreebuilder = ApplicationTreeBuilder(xlfile=xlfile, xmlfile=xmlfile, commonobjects_xlfile=objects_xlfile)
+	apptreebuilder.make_xml(write_result=True)

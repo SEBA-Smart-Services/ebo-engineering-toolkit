@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+			<ObjectSet ExportMode="Standard" Version="1.8.1.79" Note="TypesFirst">
+				<MetaInformation>
+					<ExportMode Value="Standard" />
+					<RuntimeVersion Value="1.8.1.79" />
+					<SourceVersion Value="1.8.1.79" />
+					<ServerFullPath Value="/SmartStruxure Server" />
+				</MetaInformation>
+				<ExportedObjects>
+<OI TYPE="modbus.network.SlaveDevice" NAME="Modbus Interface" >
+
+<OI TYPE="modbus.point.BinaryValue" NAME="ComsFail" />
+<OI TYPE="modbus.point.BinaryValue" NAME="online" />
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 1 Software Lockout" >
+<PI Name="RegisterNumber" Value="40001" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 1 Fault" >
+<PI Name="RegisterNumber" Value="40002" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 1 Status Fail" >
+<PI Name="RegisterNumber" Value="40003" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 1 Pump Fail" >
+<PI Name="RegisterNumber" Value="40004" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 2 Software Lockout" >
+<PI Name="RegisterNumber" Value="40005" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 2 Fault" >
+<PI Name="RegisterNumber" Value="40006" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 2 Status Fail" >
+<PI Name="RegisterNumber" Value="40007" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Chiller 2 Pump Fail" >
+<PI Name="RegisterNumber" Value="40008" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Mini Chiller 3_5_6 Fault" >
+<PI Name="RegisterNumber" Value="40020" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Sewer Pump 1 Failure" >
+<PI Name="RegisterNumber" Value="40030" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Sewer Pump 2 Failure" >
+<PI Name="RegisterNumber" Value="40031" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Sewer Pump Hi Level" >
+<PI Name="RegisterNumber" Value="40032" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Rainwater Pump 1 Failure" >
+<PI Name="RegisterNumber" Value="40033" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Rainwater Pump 2 Failure" >
+<PI Name="RegisterNumber" Value="40034" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Rainwater Pump Low Level" >
+<PI Name="RegisterNumber" Value="40035" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="ES_DB_01_A Surge Arrestor" >
+<PI Name="RegisterNumber" Value="40040" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="ES_DB_01_B Surge Arrestor" >
+<PI Name="RegisterNumber" Value="40041" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="ES_DB_01_B1 Surge Arrestor" >
+<PI Name="RegisterNumber" Value="40042" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="ES_DB_02_A Surge Arrestor" >
+<PI Name="RegisterNumber" Value="40043" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="ES_DB_02_C Surge Arrestor" >
+<PI Name="RegisterNumber" Value="40044" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="ES_DB_02_D Surge Arrestor" >
+<PI Name="RegisterNumber" Value="40045" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 1 Fault" >
+<PI Name="RegisterNumber" Value="40050" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 1 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40051" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 1 Water Detection" >
+<PI Name="RegisterNumber" Value="40052" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 2 Fault" >
+<PI Name="RegisterNumber" Value="40053" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 2 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40054" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 2 Water Detection" >
+<PI Name="RegisterNumber" Value="40055" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 4 Fault" >
+<PI Name="RegisterNumber" Value="40056" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 4 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40057" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 4 Water Detection" >
+<PI Name="RegisterNumber" Value="40058" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 5 Fault" >
+<PI Name="RegisterNumber" Value="40059" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 5 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40060" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 5 Water Detection" >
+<PI Name="RegisterNumber" Value="40061" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 6 Fault" >
+<PI Name="RegisterNumber" Value="40062" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 6 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40063" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 6 Water Detection" >
+<PI Name="RegisterNumber" Value="40064" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 7 Fault" >
+<PI Name="RegisterNumber" Value="40065" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 7 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40066" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 7 Water Detection" >
+<PI Name="RegisterNumber" Value="40067" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 8 Fault" >
+<PI Name="RegisterNumber" Value="40068" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 8 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40069" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 8 Water Detection" >
+<PI Name="RegisterNumber" Value="40070" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 9 Fault" >
+<PI Name="RegisterNumber" Value="40071" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 9 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40072" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 9 Water Detection" >
+<PI Name="RegisterNumber" Value="40073" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 10 Fault" >
+<PI Name="RegisterNumber" Value="40074" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 10 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40075" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 10 Water Detection" >
+<PI Name="RegisterNumber" Value="40076" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 11 Fault" >
+<PI Name="RegisterNumber" Value="40077" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 11 Emergency Stop" >
+<PI Name="RegisterNumber" Value="40078" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Escalator 11 Water Detection" >
+<PI Name="RegisterNumber" Value="40079" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 1 Out of Service" >
+<PI Name="RegisterNumber" Value="40090" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 2 Out of Service" >
+<PI Name="RegisterNumber" Value="40091" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 3 Out of Service" >
+<PI Name="RegisterNumber" Value="40092" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 4 Out of Service" >
+<PI Name="RegisterNumber" Value="40093" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 5 Out of Service" >
+<PI Name="RegisterNumber" Value="40094" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 6 Out of Service" >
+<PI Name="RegisterNumber" Value="40095" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 7 Out of Service" >
+<PI Name="RegisterNumber" Value="40096" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 2 Water Detected" >
+<PI Name="RegisterNumber" Value="40097" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 3 Water Detected" >
+<PI Name="RegisterNumber" Value="40098" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 4 Water Detected" >
+<PI Name="RegisterNumber" Value="40099" />
+</OI>
+<OI TYPE="modbus.point.BinaryValue" NAME="Lift 5 Water Detected" >
+<PI Name="RegisterNumber" Value="40100" />
+</OI>
+</OI>
+	</ExportedObjects>
+			</ObjectSet>

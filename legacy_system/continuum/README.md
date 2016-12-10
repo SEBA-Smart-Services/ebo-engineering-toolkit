@@ -16,11 +16,13 @@ Reads a dumpfile and converts it to an Excel workbook, where each sheet contains
 - Program
 - InfinitySystemVariable
 
-As well as relevant attributes of the object (incomplete). 
+As well as relevant attributes of the object (incomplete).
+
+Example usage
 
 ```python
 # This is a very long and ugly import call. I should probably clean it up one day
-from SmartStruxure-engineering-toolkit.legacy_system.continuum.continuum_b3dmp2sbo import DmpfileExtractor
+from SmartStruxure-engineering-toolkit.legacy_system.continuum.converter import DmpfileExtractor
 
 # define dump file locations
 # Assume you have a bunch of .dmp files exported from Continuum sitting in the same directory
@@ -58,10 +60,11 @@ Currently only supports the following object types:
 - Alarms (creates object only, does not preserve bind)
 - Schedules (creates object only, does not preserve event objects)
 
-Usage:
+Example usage:
+
 ```python
 # This is a very long and ugly import call. I should probably clean it up one day
-from SmartStruxure-engineering-toolkit.legacy_system.continuum.xml_b3_builder import b3ApplicationBuilder
+from SmartStruxure-engineering-toolkit.legacy_system.continuum.converter import b3ApplicationBuilder
 
 # The Excel workbook you just created
 my_xlfile = 'Example Continuum DDC objects.xlsx'

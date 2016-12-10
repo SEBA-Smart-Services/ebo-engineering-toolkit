@@ -16,7 +16,7 @@ TO DO: create a README for this module.
 ### Continuum
  Tools to automate conversion of Continuum objects to SBO.
  
- TO DO: create a README for this module.
+[View the README](legacy_system/continuum/README.md)
 
 ### INET
  Tools to automate conversion of INET objects to SBO.

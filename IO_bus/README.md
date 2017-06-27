@@ -1,7 +1,11 @@
 # Make StruxureWare IO bus from points list
 
 # Usage
-Create points list, either in Excel or convert to Excel workbook or csv. Close workbook/csv file and run the script from within the same directory. An IO bus xml is created in the same directory, import directly onto the IO bus in StruxureWare.
+1. Create points list, either in Excel or elsewhere.
+2. Convert points list to Excel workbook or csv if not already.
+3. Close workbook/csv file and run the script from within the same directory.
+4. An IO bus xml is created in the same directory, import xml directly onto the IO bus in StruxureWare.
+5. Configure points in StruxureWare, eg engineering units, electrical units.
 
 TODO:
 - provide excel points list samples

@@ -4,7 +4,7 @@ A bunch of python scripts and modules to automate and assist the creation and de
 ## IO Bus
 Automatically generate an IO Bus XML file for import into StruxureWare form an Excel workbook.
 
-TO DO: create a README for this module.
+[View the README](IO_bus/README.md)
 
 ## Application Tree
 Automatically generate an Application folder and object structure based on EEP guidelines, including optional variables, alarms and schedules from an Excel workbook.

@@ -36,9 +36,6 @@ class ApplicationTemplate(object):
 				for element in value:
 					print(key, value)
 					print(element.toxml())
-			print('\n')
-			print(self.template_child_elements_dict)
-			print('\n')
 
 	def get_child_nodes_by_element_tagname(self, tagname, elements_only=False):
 		'''
@@ -99,18 +96,41 @@ class FactoryInputsFromSpreadsheet(object):
 		'Sheet1C': 'Room 2.31'
 		}
 
+		factory_placeholders_sorted = {
+			'Sheet1': {
+				'Sheet1A': 'VAV-1',
+				'Sheet1B': 'Zn1',
+				'Sheet1C': 'Room 2.31'
+			}
+		}
+
 		factory_copy_substrings = [
-		{
-		'Sheet1A': 'VAV-2',
-		'Sheet1B': 'Zn2',
-		'Sheet1C': 'Meeting Room 7'
-		},
-		{
-		'Sheet1A': 'VAV-3.2',
-		'Sheet1B': 'Zn3B',
-		'Sheet1C': 'Level 3 reception'
-		},
+			{
+				'Sheet1A': 'VAV-2',
+				'Sheet1B': 'Zn2',
+				'Sheet1C': 'Meeting Room 7'
+			},
+			{
+				'Sheet1A': 'VAV-3.2',
+				'Sheet1B': 'Zn3B',
+				'Sheet1C': 'Level 3 reception'
+			},
 		]
+
+		factory_copy_substrings_sorted = {
+			'Sheet1': [
+				{
+					'Sheet1A': 'VAV-2',
+					'Sheet1B': 'Zn2',
+					'Sheet1C': 'Meeting Room 7'
+				},
+				{
+					'Sheet1A': 'VAV-3.2',
+					'Sheet1B': 'Zn3B',
+					'Sheet1C': 'Level 3 reception'
+				},
+			]
+		}
 
 		"""
 		self.xlfile = xlfile
@@ -119,31 +139,59 @@ class FactoryInputsFromSpreadsheet(object):
 			print(self.factory_placeholders)
 			print(self.factory_copy_substrings)
 
-	def create_factory_inputs_from_excel(self):
+	def create_factory_inputs_from_excel(self, sheetname=None):
+		'''
+		if sheetname not specified, all sheets will be read into one big list (except 'meta')
+		if sheetname is str, only read the sheet with name sheetname
+		if sheetname is list, read each member of list as a sheetname
 
-		workbook = openpyxl.load_workbook(self.xlfile)
-		allsheetnames = workbook.sheetnames
-		sheetnames = [s for s in allsheetnames if "meta" not in s]
+		self.factory_copy_substrings is a flattened list of copy substrings
+		factory_copy_substrings_sorted is a dict of lists of copy substrings,
+		where each key represents a sheet
+		'''
+
+		workbook = openpyxl.load_workbook(self.xlfile, data_only=True)
+
+		if sheetname == None:
+			allsheetnames = workbook.sheetnames
+			sheetnames = [s for s in allsheetnames if "meta" not in s]
+		elif isinstance(sheetname, str):
+			sheetnames = [sheetname]
+		elif isinstance(sheetname, list):
+			sheetnames = sheetname
 
 		self.factory_placeholders = {}
+		self.factory_placeholders_sorted = {}
 		self.factory_copy_substrings = []
+		self.factory_copy_substrings_sorted = {}
+
+		print('\nCreating factory inputs from:', sheetnames)
 
 		for sheetname in sheetnames:
-			# if folder object types dict key value is list
-			# need to consider seconf col to evaluate which list item
-			sheet = workbook[sheetname]
-			for row in sheet.iter_rows():
-				factory_copy = {}
-				first_row = True
-				for cell in row:
-					key = sheetname + cell.column_letter
-					if cell.row == 1:
-						self.factory_placeholders[key] = cell.value
-					else:
-						first_row = False
-						factory_copy[key] = cell.value
-				if not first_row:
-					self.factory_copy_substrings.append(factory_copy)
+			(placeholders, factory_copy_substrings) = self.create_factory_inputs_from_xl_sheet(sheetname, workbook)
+			self.factory_placeholders.update(placeholders)
+			self.factory_copy_substrings.extend(factory_copy_substrings)
+			self.factory_placeholders_sorted[sheetname] = placeholders
+			self.factory_copy_substrings_sorted[sheetname] = factory_copy_substrings
+
+	def create_factory_inputs_from_xl_sheet(self, sheetname, workbook):
+
+		sheet = workbook[sheetname]
+		placeholders = {}
+		factory_copy_substrings = []
+		for row in sheet.iter_rows():
+			factory_copy = {}
+			first_row = True
+			for cell in row:
+				key = sheetname + cell.column_letter
+				if cell.row == 1:
+					placeholders[key] = cell.value
+				else:
+					first_row = False
+					factory_copy[key] = cell.value
+			if not first_row:
+				factory_copy_substrings.append(factory_copy)
+		return (placeholders, factory_copy_substrings)
 
 
 class ApplicationFactory(object):
@@ -176,9 +224,6 @@ class ApplicationFactory(object):
 			</ObjectSet>"""
 		self.factory_doc = minidom.parseString(doc_template_str)
 		self.doc_root_element_tagname = 'ObjectSet'
-
-		print(self.factory_doc.toprettyxml(encoding='utf-8'))
-		print(self.factory_doc.getElementsByTagName(self.doc_root_element_tagname)[0])
 
 	def stdout_progress(self, step, total_steps):
 		if self.show_progress:
@@ -281,13 +326,55 @@ class ApplicationFactory(object):
 		return factory_copy_element
 
 
+
+class ApplicationFactoryManager(object):
+
+	def __init__(
+		self,
+		template_map=None,
+		xlfile=None,
+		xml_out_file_prefix=None,
+		ebo_version="3.2.1.630",
+		ebo_server_full_path="/EBOApplicationFactory_v0.1",
+		ebo_export_mode="Special",
+		show_progress=True
+	):
+		self.show_progress = show_progress
+		self.xlfile = xlfile
+		self.xml_out_file_prefix = xml_out_file_prefix
+		self.template_map = template_map
+
+		self.get_factory_inputs()
+		self.get_app_templates()
+
+	def get_app_templates(self):
+		for group in self.template_map:
+			 group['elements'] = ApplicationTemplate(group['templateFilename'], print_result=False)
+
+	def get_factory_inputs(self):
+		self.factory_inputs = FactoryInputsFromSpreadsheet(self.xlfile, print_result=False)
+		self.factory_placeholders_sorted = self.factory_inputs.factory_placeholders_sorted
+		self.factory_copy_substrings_sorted = self.factory_inputs.factory_copy_substrings_sorted
+
+	def make_documents(self):
+		for group, factory_copy_substrings in self.factory_copy_substrings_sorted.items():
+			app_factory = ApplicationFactory(
+				template_child_elements_dict=self.templates_sorted[group],
+				factory_placeholders=self.factory_placeholders_sorted[group],
+				factory_copy_substrings=factory_copy_substrings,
+				xml_out_file=self.xml_out_file_prefix+'_'+group+'.xml',
+			)
+
 # EXECUTE
 if __name__ == "__main__":
+
+	########################
+	# Basic example
+	########################
 	# declare filenames/paths here
-	xl_in_file = 'examples/apps.xlsx'
+	xl_in_file = 'examples/basic apps example.xlsx'
 	xml_in_file = 'examples/VAV-L21-INT4 application special.xml'
-	xml_out_file = 'examples/generated_ebo_apps.xml'
-	objects_xlfile = None
+	xml_out_file = 'examples/generated_ebo_apps_example.xml'
 
 	# instantiate AppTemplate object object
 	app_template = ApplicationTemplate(xml_in_file, print_result=False)
@@ -302,3 +389,34 @@ if __name__ == "__main__":
 	)
 	# app_factory.make_copies()
 	app_factory.make_document()
+
+	########################
+	# Advanced example
+	########################
+	# declare filenames/paths here
+	xl_sorted_in_file = 'examples/apps sorted.xlsx'
+	template_map = [
+		{'sheet': 'L2-3-All3StgHtg', 'templateFilename': 'VAV-L21-NW2 application special'},
+		{'sheet': 'L4-12-3StgHtg', 'templateFilename': 'VAV-L21-NW2 application special'},
+		{'sheet': 'L13-15-3StgHtg', 'templateFilename': 'VAV-L21-NW2 application special'},
+		{'sheet': 'L16-32-3StgHtg', 'templateFilename': 'VAV-L21-NW2 application special'},
+		{'sheet': 'L33-33A-All3StgHtg', 'templateFilename': 'VAV-L21-NW2 application special'},
+		{'sheet': '1StgHtg', 'templateFilename': 'VAV-L04-INT09 application special'},
+		{'sheet': 'L2-3NoHtg', 'templateFilename': 'VAV-L21-INT4 application special'},
+		{'sheet': 'L4-12NoHtg', 'templateFilename': 'VAV-L21-INT4 application special'},
+		{'sheet': 'L13-15NoHtg', 'templateFilename': 'VAV-L21-INT4 application special'},
+		{'sheet': 'L16-32NoHtg', 'templateFilename': 'VAV-L21-INT4 application special'}
+	]
+	# app_template.template_child_elements_dict
+	example_templates_sorted = {
+		list(factory_inputs.factory_placeholders_sorted.keys())[0]: app_template.template_child_elements_dict
+	}
+	print(example_templates_sorted)
+	# instantiate FactoryInputsFromSpreadsheet object
+	# sorted_factory_inputs = FactoryInputsFromSpreadsheet(xl_sorted_in_file, print_result=False)
+	# instantiate ApplicationFactoryManager object and make xml files
+	app_factory_manager = ApplicationFactoryManager(
+		template_map=template_map,
+		xlfile=xl_sorted_in_file,
+		xml_out_file_prefix='example_manager',
+	)

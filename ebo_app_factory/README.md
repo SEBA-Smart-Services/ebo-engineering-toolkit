@@ -156,6 +156,6 @@ Instructions for advanced use:
 
     ![advanced usage terminal output](images/advanced_usage_output.png)
 
-    ![advanced usage output files]('advanced_usage_output_files.png')
+    ![advanced usage output files](images/advanced_usage_output_files.png)
 
 1. As per Basic Usage, import the created xml files into EBO and inspect the imported copies for correct naming and bindings.

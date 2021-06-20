@@ -32,11 +32,11 @@ Instructions for basic use:
     ![EBO export step 2](images/ebo_export_step_3.png)
 
 1. Identify strings within the template application that should be used as placeholders for replacement with new strings for each copy. These strings may be equipment names, relative bind paths or any text that is unique to each copy of the template. Each substring should be placed in a cell in the first row of the Excel sheet. In this example:
- - "VAV-L21-INT4" is the name of the equipment and it should be replaced with the equipment name for each copy. This string has been placed in cell A1.
- - The substring "L21-INT4" is common in all bindings and should be replaced with the equivalent substring for each copy's bindings. This string has been placed in cell B1.
+    - "VAV-L21-INT4" is the name of the equipment and it should be replaced with the equipment name for each copy. This string has been placed in cell A1.
+    - The substring "L21-INT4" is common in all bindings and should be replaced with the equivalent substring for each copy's bindings. This string has been placed in cell B1.
 1. Update the spreadsheet with the equivalent replacement strings for each copy. Each row in the sheet from row 2 onward should represent a different copy of the template application. The columns should line up with the placeholder strings from the template application in the first row. For example:
- - "VAV-L04-INT09" is placed in column A to line up with template placeholder string "VAV-L21-INT4".
- - "L04_INT09" is placed in column B to line up with template placeholder string "L21-INT4".
+    - "VAV-L04-INT09" is placed in column A to line up with template placeholder string "VAV-L21-INT4".
+    - "L04_INT09" is placed in column B to line up with template placeholder string "L21-INT4".
 
     ![Excel basic workbook](images/excel_basic_example_markup.png)
 
@@ -69,20 +69,20 @@ Instructions for basic use:
     )
     ```
 
-  1. Call the make_document method of your ApplicationFactory object to generate the xml file containing copies of your application, ready for import into EBO.
+1. Call the make_document method of your ApplicationFactory object to generate the xml file containing copies of your application, ready for import into EBO.
 
     ```python
-    # app_factory.make_copies()
+    # create xml file
     app_factory.make_document()
 
     ```
 
-    ![basic usage terminal output]('./images/basic usage output.png')
+    ![basic usage terminal output](images/basic_usage_output.png)
 
 1. Import the created xml file into EBO.
 
-    ![EBO import step 1]('./images/ebo import step 1.png')
-    ![EBO import step 2]('./images/ebo import step 2.png')
+    ![EBO import step 1](images/ebo_import_step_1.png)
+    ![EBO import step 2](images/ebo_import_step_2.png)
 
 1. Inspect the imported copies for correct naming and bindings.
 
@@ -154,8 +154,8 @@ Instructions for advanced use:
 
     ```
 
-    ![advanced usage terminal output]('./images/advanced usage output.png')
+    ![advanced usage terminal output](images/advanced_usage_output.png)
 
-    ![advanced usage output files]('advanced usage output files.png')
+    ![advanced usage output files]('advanced_usage_output_files.png')
 
 1. As per Basic Usage, import the created xml files into EBO and inspect the imported copies for correct naming and bindings.

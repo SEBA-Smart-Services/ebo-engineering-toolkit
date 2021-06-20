@@ -1,14 +1,14 @@
 # EBO Application Factory
 
-Mass produce EBO applications, objects or graphics based on a single or multiple template exported xml files and a list of copies.
+Mass produce EBO applications, objects or graphics based on a single or multiple template exported EBO xml files and a list of copies.
 
 ## Overview
 
 This tool allows an exported EBO application or objects to be used as a template for mass producing EBO applications or objects.
 
-Each 'copy' and its bindings (if exported Special) are updated using a list of placeholders strings in the original template and a list of replacement strings for each copy. The list of placeholders and copies are stored in an Excel spreadsheet. These strings could be anything unique to each instance, such as equipment names, relative bind paths.
+An EBO xml file or files are created for import into EBO. Each file contains 'copies' of the template xml objects. Each 'copy' and its bindings (if exported Special) are updated using a list of placeholders strings in the original template xml and a list of replacement strings for each copy. The list of placeholders and copies are to be used are stored in an Excel workbook. These strings could be anything unique to each instance, such as equipment names (eg "VAV-L21-INT4") or relative bind paths eg ("../../Servers/MSSB-L14-1-ASP-01/BACnet Interface/IP Network/VAV-L21-INT4").
 
-All 'copies' of the template are written into an xml document for importing into EBO. Each copy is presented in parallel in the root of the import file.
+All 'copies' of the template are written into an xml document or documents for importing into EBO. Each copy is presented in parallel in the root of the import file.
 
 ## Usage
 
@@ -69,7 +69,7 @@ Instructions for basic use:
     )
     ```
 
-1. Call the make_document method of your ApplicationFactory object to generate the xml file containing copies of your application, ready for import into EBO.
+1. Call the `make_document` method of your ApplicationFactory object to generate the xml file containing copies of your application, ready for import into EBO.
 
     ```python
     # create xml file
@@ -146,7 +146,7 @@ Instructions for advanced use:
 
     ```
 
-1. Call the make_documents method of your ApplicationFactoryManager object to generate the xml file containing copies of your application, ready for import into EBO.
+1. Call the `make_documents` method of your ApplicationFactoryManager object to generate the xml file containing copies of your application, ready for import into EBO.
 
     ```python
     # create xml files

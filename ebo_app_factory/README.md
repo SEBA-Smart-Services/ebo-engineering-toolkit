@@ -38,7 +38,7 @@ Instructions for basic use:
  - "VAV-L04-INT09" is placed in column A to line up with template placeholder string "VAV-L21-INT4".
  - "L04_INT09" is placed in column B to line up with template placeholder string "L21-INT4".
 
-![Excel basic workbook]('./images/excel_basic_example_markup.png')
+![Excel basic workbook]('images/excel_basic_example_markup.png')
 
 1.  Save the Excel workbook in the working directory of your EBO Application Factory program.
 1. In your EBO Application Factory program, import the EBO Application Factory module.

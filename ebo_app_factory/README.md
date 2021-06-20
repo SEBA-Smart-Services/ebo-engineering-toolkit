@@ -88,9 +88,9 @@ Instructions for basic use:
 
 ### Advanced usage
 
-In situtaions where there are mulitple groups of EBO applications that will either be imported into difference locations in the System Tree or use different template xml files, or both, a helper class called `ApplicationFactoryManager` has been created. A unique xml file is created for each sheet in the Excel workbook. In this situation, in addition to the two Basic Usage requirements, as additional input is required:
+In situations where there are multiple groups of EBO applications that will either be imported into different locations in the System Tree or each use a different template xml file, or both, a helper class called `ApplicationFactoryManager` has been provided. A unique xml file is created for each sheet in the Excel workbook. In addition to the two Basic Usage requirements, an additional input is required:
 
-- A dictionary of Excel workbook sheet names and corresponding  EBO exported xml template file to use. I'm sure there is a more elegant way of mapping sheets to template xml files but that is a future problem. Example:
+- A dictionary of Excel workbook sheet names and corresponding  EBO exported xml template files to use. I'm sure there is a more elegant way of mapping sheets to template xml files but that is a future problem. Example:
 
 ```python
 template_map = {
@@ -110,6 +110,9 @@ template_map = {
 Instructions for advanced use:
 
 1. From EBO WorkStation, export the application, folder, or objects to be used as a template for each 'application group' of copies to be made. Unlike the basic usage, an unlimited number of template applications can be exported. Save the template xml files in the working directory of your EBO Application Factory program.
+
+    ![Excel advanced workbook](images/excel_advanced_example.png)
+
 1. Create the Excel workbook as per the basic usage but split each 'application group' into a different sheet. For each sheet the same rule applies, first row contains template placeholder strings, subsequent rows represent replacement strings for each copy.
 1.  Save the Excel workbook in the working directory of your EBO Application Factory program.
 1. In your EBO Application Factory program, import the EBO Application Factory Manager module.

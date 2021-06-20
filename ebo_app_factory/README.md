@@ -25,7 +25,7 @@ Instructions for basic use:
 
 1. From EBO WorkStation, export the application, folder, or objects to be used as a template for copies to be made. The export can be either Standard or Special. Save the template xml file in the working directory of your EBO Application Factory program.
 
-![EBO export step 1]('./images/ebo export step 1.png')
+![EBO export step 1]('images/ebo export step 1.png')
 ![EBO export step 2]('./images/ebo export step 2.png')
 ![EBO export step 2]('./images/ebo export step 3.png')
 

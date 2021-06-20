@@ -25,11 +25,11 @@ Instructions for basic use:
 
 1. From EBO WorkStation, export the application, folder, or objects to be used as a template for copies to be made. The export can be either Standard or Special. Save the template xml file in the working directory of your EBO Application Factory program.
 
-![EBO export step 1](images/ebo_export_step_1.png)
+  ![EBO export step 1](images/ebo_export_step_1.png)
 
-![EBO export step 2](images/ebo_export_step_2.png)
+  ![EBO export step 2](images/ebo_export_step_2.png)
 
-![EBO export step 2](images/ebo_export_step_3.png)
+  ![EBO export step 2](images/ebo_export_step_3.png)
 
 1. Identify strings within the template application that should be used as placeholders for replacement with new strings for each copy. These strings may be equipment names, relative bind paths or any text that is unique to each copy of the template. Each substring should be placed in a cell in the first row of the Excel sheet. In this example:
  - "VAV-L21-INT4" is the name of the equipment and it should be replaced with the equipment name for each copy. This string has been placed in cell A1.
@@ -38,51 +38,51 @@ Instructions for basic use:
  - "VAV-L04-INT09" is placed in column A to line up with template placeholder string "VAV-L21-INT4".
  - "L04_INT09" is placed in column B to line up with template placeholder string "L21-INT4".
 
-![Excel basic workbook](images/excel_basic_example_markup.png)
+  ![Excel basic workbook](images/excel_basic_example_markup.png)
 
 1.  Save the Excel workbook in the working directory of your EBO Application Factory program.
 1. In your EBO Application Factory program, import the EBO Application Factory module.
 1. Set the filename and path of the input Excel spreadsheet and template xml file and the filename and path of the xml file to be created containing the application copies to be imported into EBO.
-1. Instantitate the ApplicationTemplate, FactoryInputsFromSpreadsheet and ApplicationFactory objects, passing in the inputs as shown in the example below.
+1. Instantitate the `ApplicationTemplate`, `FactoryInputsFromSpreadsheet` and `ApplicationFactory` objects, passing in the inputs as shown in the example below:
 
-```python
-########################
-# Basic example
-########################
-from ebo_app_factory.xml_app_factory import ApplicationTemplate, FactoryInputsFromSpreadsheet, ApplicationFactory
+  ```python
+  ########################
+  # Basic example
+  ########################
+  from ebo_app_factory.xml_app_factory import ApplicationTemplate, FactoryInputsFromSpreadsheet, ApplicationFactory
 
-# declare filenames/paths here
-xl_in_file = 'examples/basic apps example.xlsx'
-xml_in_file = 'examples/VAV-L21-INT4 application special.xml'
-xml_out_file = 'examples/generated_ebo_apps_basic_example.xml'
+  # declare filenames/paths here
+  xl_in_file = 'examples/basic apps example.xlsx'
+  xml_in_file = 'examples/VAV-L21-INT4 application special.xml'
+  xml_out_file = 'examples/generated_ebo_apps_basic_example.xml'
 
-# instantiate AppTemplate object object
-app_template = ApplicationTemplate(xml_in_file, print_result=False)
-# instantiate FactoryInputsFromSpreadsheet object
-factory_inputs = FactoryInputsFromSpreadsheet(xl_in_file, print_result=False)
-# instantiate ApplicationFactory object and make xml
-app_factory = ApplicationFactory(
-  template_child_elements_dict=app_template.template_child_elements_dict,
-  factory_placeholders=factory_inputs.factory_placeholders,
-  factory_copy_substrings=factory_inputs.factory_copy_substrings,
-  xml_out_file=xml_out_file,
-)
-```
+  # instantiate AppTemplate object object
+  app_template = ApplicationTemplate(xml_in_file, print_result=False)
+  # instantiate FactoryInputsFromSpreadsheet object
+  factory_inputs = FactoryInputsFromSpreadsheet(xl_in_file, print_result=False)
+  # instantiate ApplicationFactory object and make xml
+  app_factory = ApplicationFactory(
+    template_child_elements_dict=app_template.template_child_elements_dict,
+    factory_placeholders=factory_inputs.factory_placeholders,
+    factory_copy_substrings=factory_inputs.factory_copy_substrings,
+    xml_out_file=xml_out_file,
+  )
+  ```
 
 1. Call the make_document method of your ApplicationFactory object to generate the xml file containing copies of your application, ready for import into EBO.
 
-```python
-# app_factory.make_copies()
-app_factory.make_document()
+  ```python
+  # app_factory.make_copies()
+  app_factory.make_document()
 
-```
+  ```
 
-![basic usage terminal output]('./images/basic usage output.png')
+  ![basic usage terminal output]('./images/basic usage output.png')
 
 1. Import the created xml file into EBO.
 
-![EBO import step 1]('./images/ebo import step 1.png')
-![EBO import step 2]('./images/ebo import step 2.png')
+  ![EBO import step 1]('./images/ebo import step 1.png')
+  ![EBO import step 2]('./images/ebo import step 2.png')
 
 1. Inspect the imported copies for correct naming and bindings.
 
@@ -117,44 +117,44 @@ Instructions for advanced use:
 1. Create or import the dictionary mapping Excel workbook sheet names to template xml file paths containing the application copies to be imported into EBO.
 1. Instantitate the ApplicationFactoryManager objects, passing in the inputs as shown in the example below. Include the file path/prefix for the application group xml files to be written to. The suffix of each file will be the Excel workbook sheet name.
 
-```python
-########################
-# Advanced example
-########################
-from ebo_app_factory.xml_app_factory import ApplicationFactoryManager
+  ```python
+  ########################
+  # Advanced example
+  ########################
+  from ebo_app_factory.xml_app_factory import ApplicationFactoryManager
 
-# declare filenames/paths here
-xl_sorted_in_file = 'examples/sorted apps example.xlsx'
-# create dictionary mapping Excel sheet names to template xml files
-template_map = {
-  'L2-3-All3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
-  'L4-12-3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
-  'L13-15-3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
-  'L16-32-3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
-  '1StgHtg': {'templateFilename': 'examples/VAV-L04-INT09 application special.xml'},
-  'L2-3NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
-  'L4-12NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
-  'L13-15NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
-  'L16-32NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
-}
-# instantiate ApplicationFactoryManager object
-app_factory_manager = ApplicationFactoryManager(
-  template_map=template_map,
-  xlfile=xl_sorted_in_file,
-  xml_out_file_prefix='examples/example_ebo_apps'
-)
+  # declare filenames/paths here
+  xl_sorted_in_file = 'examples/sorted apps example.xlsx'
+  # create dictionary mapping Excel sheet names to template xml files
+  template_map = {
+    'L2-3-All3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
+    'L4-12-3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
+    'L13-15-3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
+    'L16-32-3StgHtg': {'templateFilename': 'examples/VAV-L21-NW2 application special.xml'},
+    '1StgHtg': {'templateFilename': 'examples/VAV-L04-INT09 application special.xml'},
+    'L2-3NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
+    'L4-12NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
+    'L13-15NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
+    'L16-32NoHtg': {'templateFilename': 'examples/VAV-L21-INT4 application special.xml'},
+  }
+  # instantiate ApplicationFactoryManager object
+  app_factory_manager = ApplicationFactoryManager(
+    template_map=template_map,
+    xlfile=xl_sorted_in_file,
+    xml_out_file_prefix='examples/example_ebo_apps'
+  )
 
-```
+  ```
 
 1. Call the make_documents method of your ApplicationFactoryManager object to generate the xml file containing copies of your application, ready for import into EBO.
 
-```python
-# create xml files
-app_factory_manager.make_documents()
+  ```python
+  # create xml files
+  app_factory_manager.make_documents()
 
-```
+  ```
 
-![advanced usage terminal output]('./images/advanced usage output.png')
-![advanced usage output files]('advanced usage output files.png')
+  ![advanced usage terminal output]('./images/advanced usage output.png')
+  ![advanced usage output files]('advanced usage output files.png')
 
 1. As per Basic Usage, import the created xml files into EBO and inspect the imported copies for correct naming and bindings.

@@ -25,11 +25,11 @@ Instructions for basic use:
 
 1. From EBO WorkStation, export the application, folder, or objects to be used as a template for copies to be made. The export can be either Standard or Special. Save the template xml file in the working directory of your EBO Application Factory program.
 
-![EBO export step 1]('images/ebo export step 1.png')
+![EBO export step 1](images/ebo_export_step_1.png)
 
-![EBO export step 2]('./images/ebo export step 2.png')
+![EBO export step 2](images/ebo_export_step_2.png)
 
-![EBO export step 2]('./images/ebo export step 3.png')
+![EBO export step 2](images/ebo_export_step_3.png)
 
 1. Identify strings within the template application that should be used as placeholders for replacement with new strings for each copy. These strings may be equipment names, relative bind paths or any text that is unique to each copy of the template. Each substring should be placed in a cell in the first row of the Excel sheet. In this example:
  - "VAV-L21-INT4" is the name of the equipment and it should be replaced with the equipment name for each copy. This string has been placed in cell A1.
@@ -38,7 +38,7 @@ Instructions for basic use:
  - "VAV-L04-INT09" is placed in column A to line up with template placeholder string "VAV-L21-INT4".
  - "L04_INT09" is placed in column B to line up with template placeholder string "L21-INT4".
 
-![Excel basic workbook]('images/excel_basic_example_markup.png')
+![Excel basic workbook](images/excel_basic_example_markup.png)
 
 1.  Save the Excel workbook in the working directory of your EBO Application Factory program.
 1. In your EBO Application Factory program, import the EBO Application Factory module.

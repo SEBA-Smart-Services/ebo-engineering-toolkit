@@ -51,10 +51,15 @@ class ApplicationTemplate(object):
 		assumes 1st element returned in getElementsByTagName
 		returns list of child nodes inside Element 'tagname'
 		'''
+		nodes = self.xml_in_doc.getElementsByTagName(tagname)
+		
+		if not nodes:  # If the list is empty
+			return []  # Return an empty list
+		
 		if elements_only:
-			return self.get_child_elements(self.xml_in_doc.getElementsByTagName(tagname)[0].childNodes)
+			return self.get_child_elements(nodes[0].childNodes)
 		else:
-			return self.xml_in_doc.getElementsByTagName(tagname)[0].childNodes
+			return nodes[0].childNodes
 
 	def get_attr_if_exists(self, node, attr_name):
 		if node.hasAttribute(attr_name):
@@ -76,6 +81,7 @@ class ApplicationTemplate(object):
 		template_child_elements_dict = {}
 		for key in self.template_nodes:
 				template_child_elements_dict[key] = self.get_child_nodes_by_element_tagname(key, elements_only=True)
+		print(template_child_elements_dict)
 		return template_child_elements_dict
 
 
